@@ -30,15 +30,15 @@ function Test-AzureMonitorRelatedCommands{
 		$resourceGroupName = $cluster.ResourceGroup
 		$workspace = Get-AzOperationalInsightsWorkspace -Name $workspaceName -ResourceGroupName $resourceGroupName 
 
-		# get workspace's primaryKey
+		#get workspace's primaryKey
 		$keys = Get-AzOperationalInsightsWorkspaceSharedKey -ResourceGroupName $resourceGroupName -Name $workspace.Name
 		Assert-NotNull $keys
 
-		# test Get-AzHDInsightAzureMonitor
+		#test Get-AzHDInsightAzureMonitor
 		$result = Get-AzHDInsightAzureMonitor -ClusterName $cluster.Name -ResourceGroupName $cluster.ResourceGroup
 		Assert-Null $result.WorkspaceId
 		
-		# test Enable-AzHDInsightAzureMonitor
+		#test Enable-AzHDInsightAzureMonitor
 		$workspaceId = $workspace.CustomerId
 		$primaryKey = $keys.PrimarySharedKey
 
@@ -50,7 +50,7 @@ function Test-AzureMonitorRelatedCommands{
 		Assert-True {$result.ClusterMonitoringEnabled}
 		Assert-AreEqual $result.WorkspaceId $workspaceId
 		
-		# test Disable-AzHDInsightAzureMonitor
+		#test Disable-AzHDInsightAzureMonitor
 		Disable-AzHDInsightAzureMonitor -ClusterName $cluster.Name -ResourceGroupName $cluster.ResourceGroup
 		$result = Get-AzHDInsightAzureMonitor -ClusterName $cluster.Name -ResourceGroupName $cluster.ResourceGroup
 		Assert-False {$result.ClusterMonitoringEnabled}

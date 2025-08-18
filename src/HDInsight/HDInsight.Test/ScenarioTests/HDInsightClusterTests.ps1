@@ -22,7 +22,7 @@ function Test-HDInsightJobManagementCommands{
 		$clusterName = "ps-test-cluster" 
 		$resourceGroupName = "group-ps-test"
 		$httpUser="admin"
-		$httpPassword = ConvertTo-SecureString "Password" -AsPlainText -Force
+		$httpPassword = ConvertTo-SecureString "Sanitized" -AsPlainText -Force
 		$httpCredential = New-Object System.Management.Automation.PSCredential($httpUser, $httpPassword)
 		# test Use-AzHDInsightCluster
 		Use-AzHDInsightCluster -ClusterName $clusterName -ResourceGroupName $resourceGroupName -HttpCredential $httpCredential
@@ -47,17 +47,23 @@ function Test-HDInsightJobManagementCommands{
 
 		# test New-AzHDInsightMapReduceJobDefinition
 		$mapReduceJob = New-AzHDInsightMapReduceJobDefinition -JarFile "/example/jars/hadoop-mapreduce-examples.jar" -ClassName "pi" -Arguments "10","10" -JobName "PiEstimation"
-		
+
 		$jobMapReduce = Start-AzHDInsightJob -ClusterName $clusterName -ResourceGroupName $resourceGroupName -JobDefinition $mapReduceJob -HttpCredential $httpCredential
 
 		# test Stop-AzHDInsightJob
 		Stop-AzHDInsightJob -ClusterName $clusterName -ResourceGroupName $resourceGroupName -HttpCredential $httpCredential -JobId  $jobMapReduce.JobId
+		
+		$pigJob = New-AzHDInsightPigJobDefinition -Query "SHOW TABLES"
+		Assert-NotNull $pigJob
 
+		$sqoopJob = New-AzHDInsightSqoopJobDefinition
+		Assert-NotNull $sqoopJob
+		
+		$streamingJob = New-AzHDInsightStreamingMapReduceJobDefinition -InputPath '/tmp'
+		Assert-NotNull $streamingJob
 	}
 	finally
 	{
-		# Delete cluster and resource group
-		# Remove-AzResourceGroup -ResourceGroupName $params.resourceGroupName
 	}
 }
 
@@ -619,8 +625,7 @@ function Test-CreateClusterWithPrivateLinkConfiguration{
 		$params= Prepare-ClusterCreateParameter
 
 		# Private Link requires vnet has firewall, this is difficult to create dynamically, just hardcode here
-		$vnetId= "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Network/virtualNetworks/fakevnet"
-		$subnetName="default"
+		$vnetId= "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0"
 
 		$ipConfigName="ipconfig"
 		$privateIPAllocationMethod="dynamic" # the only supported IP allocation method for private link IP configuration is dynamic
@@ -640,7 +645,7 @@ function Test-CreateClusterWithPrivateLinkConfiguration{
 		-HttpCredential $params.httpCredential -SshCredential $params.sshCredential `
 		-MinSupportedTlsVersion $params.minSupportedTlsVersion `
 		-VirtualNetworkId $vnetId -SubnetName $subnetName `
-		-ResourceProviderConnection Outbound -PrivateLink Enabled -PrivateLinkConfiguration $privateLinkConfiguration
+		-ResourceProviderConnection Outbound -PrivateLink Enabled -PrivateLinkConfiguration $privateLinkConfiguration -Version 5.1
 
 		Assert-AreEqual $cluster.NetworkProperties.ResourceProviderConnection Outbound
 		Assert-AreEqual $cluster.NetworkProperties.PrivateLink Enabled

@@ -154,7 +154,6 @@ function Test-CreateClusterByConfigurationPipelining{
 		$cluster = New-AzHDInsightCluster @clusterParams
 		Assert-NotNull $cluster
 	}
-
 	finally
 	{
 		# Delete cluster and resource group

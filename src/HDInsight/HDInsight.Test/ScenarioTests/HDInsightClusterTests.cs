@@ -130,7 +130,7 @@ namespace Commands.HDInsight.Test.ScenarioTests
             TestRunner.RunTestScript("Test-CreateClusterWithAvailabilityZones");
         }
 
-        [Fact(Skip = "need to create resource manually")]
+        [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
         public void TestCreateClusterWithPrivateLinkConfiguration()
         {
