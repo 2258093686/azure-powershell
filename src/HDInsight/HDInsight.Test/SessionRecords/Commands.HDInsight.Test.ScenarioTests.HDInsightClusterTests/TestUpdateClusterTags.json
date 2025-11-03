@@ -1,21 +1,21 @@
 {
   "Entries": [
     {
-      "RequestUri": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster?api-version=2025-01-15-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwL3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvcHMtdGVzdC1jbHVzdGVyP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
+      "RequestUri": "/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster?api-version=2025-01-15-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOTY0YzEwYmItOGE2Yy00M2JjLTgzZDMtNmIzMThjNmM3MzA1L3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvcHMtdGVzdC1jbHVzdGVyP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
       "RequestMethod": "PATCH",
       "RequestHeaders": {
         "Accept-Language": [
           "en-US"
         ],
         "x-ms-client-request-id": [
-          "b1a5914d-571a-43ef-af42-3b31d1c1cfb5"
+          "cbe52f3b-f6b0-42f3-ba2e-dfdd403efb5f"
         ],
         "User-Agent": [
-          "FxVersion/8.0.1625.21506",
+          "FxVersion/8.0.2125.47513",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.26100",
-          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.3.1"
+          "OSVersion/Microsoft.Windows.10.0.26200",
+          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.4.0"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -33,16 +33,16 @@
           "no-cache"
         ],
         "x-ms-request-id": [
-          "24718b85-8a69-409d-ab08-0b9cfd93fcff"
+          "0109fc0d-81b5-4668-a529-97b12b22adae"
         ],
         "x-ms-hdi-served-by": [
           "eastasia"
         ],
         "x-ms-correlation-request-id": [
-          "d08f2c2b-bc88-41dc-a75d-c23fee493978"
+          "2e5dd00e-6001-43a8-9e4b-3854f6095c7b"
         ],
         "x-ms-operation-identifier": [
-          "tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47,objectId=9cd85b81-c262-44da-bc33-96c3b8c182d3/japaneast/698d04c7-9917-4606-8f44-a791e8bfe30a"
+          "tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47,objectId=9cd85b81-c262-44da-bc33-96c3b8c182d3/japaneast/638ea4cd-85e9-4a64-bde2-69658712cf27"
         ],
         "x-ms-ratelimit-remaining-subscription-writes": [
           "799"
@@ -51,7 +51,7 @@
           "11999"
         ],
         "x-ms-routing-request-id": [
-          "JAPANEAST:20250519T094149Z:d08f2c2b-bc88-41dc-a75d-c23fee493978"
+          "JAPANEAST:20251030T081822Z:2e5dd00e-6001-43a8-9e4b-3854f6095c7b"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -63,13 +63,13 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: F321E8FB5D5349BFA1442253226CD691 Ref B: TYO201100115027 Ref C: 2025-05-19T09:41:47Z"
+          "Ref A: 1899B8CC94CD424688F25E8073AC43C7 Ref B: TYO01EDGE0711 Ref C: 2025-10-30T08:18:18Z"
         ],
         "Date": [
-          "Mon, 19 May 2025 09:41:49 GMT"
+          "Thu, 30 Oct 2025 08:18:21 GMT"
         ],
         "Content-Length": [
-          "3039"
+          "3712"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -78,25 +78,25 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/hadoop-5.1.3000.0.2504170544.json\",\r\n      \"kind\": \"Hadoop\",\r\n      \"componentVersion\": {\r\n        \"Hadoop\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"094025e3354142cc9a95c9f5d5eeb2a2\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e4_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-05-16T08:53:52.063\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 32\r\n    },\r\n    \"connectivityEndpoints\": [],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": false\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"storagepstest4475.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Storage/storageAccounts/storagepstest4475\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"ps-test-cluster\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": null,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster\",\r\n  \"name\": \"ps-test-cluster\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"be990abd-2776-44db-acd2-b3f7e92c9aee\",\r\n  \"tags\": {\r\n    \"Tag3\": \"Value3\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/hadoop-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"HADOOP\",\r\n      \"componentVersion\": {\r\n        \"Hadoop\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"b38c3d04715249cdaf7c588e449fabae\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e4_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-08-01T09:21:52.187\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 40\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.223\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": false\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"storagepstest1508.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test7390/providers/Microsoft.Storage/storageAccounts/storagepstest1508\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"ps-test-cluster-2025-08-01t09-20-50-533z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster\",\r\n  \"name\": \"ps-test-cluster\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"4b4d3c9e-903d-4e80-bf85-1721f193840d\",\r\n  \"tags\": {\r\n    \"Tag3\": \"Value3\",\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.0\": \"\",\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.1\": \"\",\r\n    \"ms.inv.v0.backedby.origin.tenantid\": \"\",\r\n    \"ms.inv.v0.security.ownerrole\": \"\"\r\n  },\r\n  \"identity\": {\r\n    \"type\": \"SystemAssigned\",\r\n    \"principalId\": \"f2fb4341-1070-4d0b-b900-b943fb4d785b\",\r\n    \"tenantId\": \"72f988bf-86f1-41af-91ab-2d7cd011db47\"\r\n  }\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster?api-version=2025-01-15-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwL3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvcHMtdGVzdC1jbHVzdGVyP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
+      "RequestUri": "/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster?api-version=2025-01-15-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOTY0YzEwYmItOGE2Yy00M2JjLTgzZDMtNmIzMThjNmM3MzA1L3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvcHMtdGVzdC1jbHVzdGVyP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept-Language": [
           "en-US"
         ],
         "x-ms-client-request-id": [
-          "b1a5914d-571a-43ef-af42-3b31d1c1cfb5"
+          "cbe52f3b-f6b0-42f3-ba2e-dfdd403efb5f"
         ],
         "User-Agent": [
-          "FxVersion/8.0.1625.21506",
+          "FxVersion/8.0.2125.47513",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.26100",
-          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.3.1"
+          "OSVersion/Microsoft.Windows.10.0.26200",
+          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.4.0"
         ]
       },
       "RequestBody": "",
@@ -108,13 +108,13 @@
           "no-cache"
         ],
         "x-ms-request-id": [
-          "692f6a0b-2ba3-41f4-9736-f8bea68c7e08"
+          "49526637-ae2c-4166-ac61-4373bb7cd76c"
         ],
         "x-ms-hdi-served-by": [
           "eastasia"
         ],
         "x-ms-correlation-request-id": [
-          "ecad2060-f1c2-4bcc-a1f3-e549fdc9f5f5"
+          "53cd079c-3ff4-4512-a73d-a0777c7b7ea4"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
           "1099"
@@ -123,7 +123,7 @@
           "16499"
         ],
         "x-ms-routing-request-id": [
-          "JAPANEAST:20250519T094150Z:ecad2060-f1c2-4bcc-a1f3-e549fdc9f5f5"
+          "EASTASIA:20251030T081823Z:53cd079c-3ff4-4512-a73d-a0777c7b7ea4"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -135,13 +135,13 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: 0E55B15118114A5AB877E6665E408EDC Ref B: TYO201100115027 Ref C: 2025-05-19T09:41:49Z"
+          "Ref A: 511BBCE73F604B188881125BEA63D936 Ref B: TYO01EDGE0711 Ref C: 2025-10-30T08:18:22Z"
         ],
         "Date": [
-          "Mon, 19 May 2025 09:41:49 GMT"
+          "Thu, 30 Oct 2025 08:18:22 GMT"
         ],
         "Content-Length": [
-          "3039"
+          "3712"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -150,12 +150,12 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/hadoop-5.1.3000.0.2504170544.json\",\r\n      \"kind\": \"Hadoop\",\r\n      \"componentVersion\": {\r\n        \"Hadoop\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"094025e3354142cc9a95c9f5d5eeb2a2\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e4_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-05-16T08:53:52.063\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 32\r\n    },\r\n    \"connectivityEndpoints\": [],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": false\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"storagepstest4475.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Storage/storageAccounts/storagepstest4475\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"ps-test-cluster\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": null,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster\",\r\n  \"name\": \"ps-test-cluster\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"be990abd-2776-44db-acd2-b3f7e92c9aee\",\r\n  \"tags\": {\r\n    \"Tag3\": \"Value3\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/hadoop-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"HADOOP\",\r\n      \"componentVersion\": {\r\n        \"Hadoop\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"b38c3d04715249cdaf7c588e449fabae\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e4_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-08-01T09:21:52.187\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 40\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.223\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": false\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"storagepstest1508.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test7390/providers/Microsoft.Storage/storageAccounts/storagepstest1508\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"ps-test-cluster-2025-08-01t09-20-50-533z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster\",\r\n  \"name\": \"ps-test-cluster\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"4b4d3c9e-903d-4e80-bf85-1721f193840d\",\r\n  \"tags\": {\r\n    \"Tag3\": \"Value3\",\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.0\": \"\",\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.1\": \"\",\r\n    \"ms.inv.v0.backedby.origin.tenantid\": \"\",\r\n    \"ms.inv.v0.security.ownerrole\": \"\"\r\n  },\r\n  \"identity\": {\r\n    \"type\": \"SystemAssigned\",\r\n    \"principalId\": \"f2fb4341-1070-4d0b-b900-b943fb4d785b\",\r\n    \"tenantId\": \"72f988bf-86f1-41af-91ab-2d7cd011db47\"\r\n  }\r\n}",
       "StatusCode": 200
     }
   ],
   "Names": {},
   "Variables": {
-    "SubscriptionId": "00000000-0000-0000-0000-000000000000"
+    "SubscriptionId": "964c10bb-8a6c-43bc-83d3-6b318c6c7305"
   }
 }

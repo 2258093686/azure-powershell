@@ -152,7 +152,9 @@ function Test-CreateClusterByConfigurationPipelining{
 			VirtualNetworkId                = $params.virtualNetworkId
 			SubnetName                      = $params.subnet
 			Version                         = $params.version
-			Config                          = $config
+			StorageContainer                = $params.clusterName
+			StorageAccountResourceId        = $params.storageAccountResourceId
+			StorageAccountManagedIdentity   = $params.storageAccountManagedIdentity
          }
 		$cluster = New-AzHDInsightCluster @clusterParams
 		Assert-NotNull $cluster

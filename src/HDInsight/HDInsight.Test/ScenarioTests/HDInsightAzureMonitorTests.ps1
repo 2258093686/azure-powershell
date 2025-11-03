@@ -22,7 +22,7 @@ function Test-AzureMonitorRelatedCommands{
 	try
 	{
 		# get cluster that will be used throughout test
-		$cluster = Get-AzHDInsightCluster -ResourceGroupName  "group-ps-test" -ClusterName  "ps-test-cluster"
+		$cluster = Get-AzHDInsightCluster -ResourceGroupName  "group-ps-test" -ClusterName  "hdi"
 		Assert-NotNull $cluster
 
 		# get a Log Analytics Workspace
@@ -73,7 +73,7 @@ function Test-AzureMonitorAgentRelatedCommands{
 		# $params= Prepare-ClusterCreateParameter -location $location
 
 		# create cluster that will be used throughout test
-		$cluster = Get-AzHDInsightCluster -ResourceGroupName "group-ps-test" -ClusterName "ps-test-cluster"
+		$cluster = Get-AzHDInsightCluster -ResourceGroupName "group-ps-test" -ClusterName "hdi"
 		Assert-NotNull $cluster
 
 		$workspaceName = "ps-la"

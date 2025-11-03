@@ -1,21 +1,21 @@
 {
   "Entries": [
     {
-      "RequestUri": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster?api-version=2025-01-15-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwL3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvcHMtdGVzdC1jbHVzdGVyP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
+      "RequestUri": "/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/hdi?api-version=2025-01-15-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOTY0YzEwYmItOGE2Yy00M2JjLTgzZDMtNmIzMThjNmM3MzA1L3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvaGRpP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept-Language": [
           "en-US"
         ],
         "x-ms-client-request-id": [
-          "d18ce28e-08c4-4a0e-9484-dd8470d06c0a"
+          "19ec0da7-c18e-46f9-94f8-f7104391e600"
         ],
         "User-Agent": [
-          "FxVersion/8.0.1825.31117",
+          "FxVersion/8.0.2125.47513",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.26100",
-          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.3.1"
+          "OSVersion/Microsoft.Windows.10.0.26200",
+          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.4.0"
         ]
       },
       "RequestBody": "",
@@ -27,13 +27,16 @@
           "no-cache"
         ],
         "x-ms-request-id": [
-          "13583520-5272-46a9-9581-2a17c58668f5"
+          "b7c773ce-1265-4426-b0d8-b0988fd2d106"
         ],
         "x-ms-hdi-served-by": [
           "eastasia"
         ],
         "x-ms-correlation-request-id": [
-          "ebdf2109-af7c-4c3e-afcc-48e22b0b7db3"
+          "d5191f5b-db4e-47ec-b6ac-924ef46aa3cc"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
           "1099"
@@ -42,7 +45,7 @@
           "16499"
         ],
         "x-ms-routing-request-id": [
-          "JAPANEAST:20250804T020827Z:ebdf2109-af7c-4c3e-afcc-48e22b0b7db3"
+          "SOUTHEASTASIA:20251028T074455Z:d5191f5b-db4e-47ec-b6ac-924ef46aa3cc"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -50,17 +53,11 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
-        "X-Cache": [
-          "CONFIG_NOCACHE"
-        ],
-        "X-MSEdge-Ref": [
-          "Ref A: D3DA7F48C259479590E99E711CE45141 Ref B: TYO01EDGE3512 Ref C: 2025-08-04T02:08:26Z"
-        ],
         "Date": [
-          "Mon, 04 Aug 2025 02:08:27 GMT"
+          "Tue, 28 Oct 2025 07:44:54 GMT"
         ],
         "Content-Length": [
-          "3393"
+          "3616"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -69,25 +66,25 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/hadoop-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"HADOOP\",\r\n      \"componentVersion\": {\r\n        \"Hadoop\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"b38c3d04715249cdaf7c588e449fabae\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e4_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-08-01T09:21:52.187\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 40\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.223\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": false\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"storagepstest1508.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test7390/providers/Microsoft.Storage/storageAccounts/storagepstest1508\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"ps-test-cluster-2025-08-01t09-20-50-533z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster\",\r\n  \"name\": \"ps-test-cluster\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"4b4d3c9e-903d-4e80-bf85-1721f193840d\",\r\n  \"tags\": {}\r\n}",
+      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/spark-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"SPARK\",\r\n      \"componentVersion\": {\r\n        \"Spark\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"3780cb64828841d2a3bc08febda3d7fc\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-10-28T06:32:25.9\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 48\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.16\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": true\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"yk01wasb666666666666.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Storage/storageAccounts/yk01wasb666666666666\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"hdi-2025-10-28t06-31-30-379z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/hdi\",\r\n  \"name\": \"hdi\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"2e2c6cd8-091b-48ba-9248-fffd4da9ff5c\",\r\n  \"tags\": {\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.0\": \"\",\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.1\": \"\",\r\n    \"ms.inv.v0.backedby.origin.tenantid\": \"\",\r\n    \"ms.inv.v0.security.ownerrole\": \"\"\r\n  },\r\n  \"identity\": {\r\n    \"type\": \"SystemAssigned\",\r\n    \"principalId\": \"b780faba-b7b4-4e69-bc40-bb7f1341429d\",\r\n    \"tenantId\": \"72f988bf-86f1-41af-91ab-2d7cd011db47\"\r\n  }\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster?api-version=2025-01-15-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwL3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvcHMtdGVzdC1jbHVzdGVyP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
+      "RequestUri": "/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/hdi?api-version=2025-01-15-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOTY0YzEwYmItOGE2Yy00M2JjLTgzZDMtNmIzMThjNmM3MzA1L3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvaGRpP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept-Language": [
           "en-US"
         ],
         "x-ms-client-request-id": [
-          "f5af7c29-3776-4543-b407-84b24c604377"
+          "8c76ed5f-7b13-4e2c-8150-e28cf6b8db50"
         ],
         "User-Agent": [
-          "FxVersion/8.0.1825.31117",
+          "FxVersion/8.0.2125.47513",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.26100",
-          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.3.1"
+          "OSVersion/Microsoft.Windows.10.0.26200",
+          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.4.0"
         ]
       },
       "RequestBody": "",
@@ -99,13 +96,16 @@
           "no-cache"
         ],
         "x-ms-request-id": [
-          "0c840b04-2d77-4ac9-968c-b1e8a05ff885"
+          "a2147ce8-5839-4d31-8ad0-2b6c05ce81c3"
         ],
         "x-ms-hdi-served-by": [
           "eastasia"
         ],
         "x-ms-correlation-request-id": [
-          "5880cc4f-ffb6-4338-9564-d176ba2cba81"
+          "e1629280-4e25-4473-8b9f-97add361a61c"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
           "1099"
@@ -114,7 +114,7 @@
           "16499"
         ],
         "x-ms-routing-request-id": [
-          "EASTASIA:20250804T020830Z:5880cc4f-ffb6-4338-9564-d176ba2cba81"
+          "SOUTHEASTASIA:20251028T074524Z:e1629280-4e25-4473-8b9f-97add361a61c"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -122,17 +122,11 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
-        "X-Cache": [
-          "CONFIG_NOCACHE"
-        ],
-        "X-MSEdge-Ref": [
-          "Ref A: 3D692B52605D4472B08EAC8594FFE208 Ref B: TYO201100114045 Ref C: 2025-08-04T02:08:29Z"
-        ],
         "Date": [
-          "Mon, 04 Aug 2025 02:08:29 GMT"
+          "Tue, 28 Oct 2025 07:45:24 GMT"
         ],
         "Content-Length": [
-          "3393"
+          "3616"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -141,25 +135,25 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/hadoop-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"HADOOP\",\r\n      \"componentVersion\": {\r\n        \"Hadoop\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"b38c3d04715249cdaf7c588e449fabae\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e4_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-08-01T09:21:52.187\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 40\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.223\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": false\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"storagepstest1508.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test7390/providers/Microsoft.Storage/storageAccounts/storagepstest1508\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"ps-test-cluster-2025-08-01t09-20-50-533z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster\",\r\n  \"name\": \"ps-test-cluster\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"4b4d3c9e-903d-4e80-bf85-1721f193840d\",\r\n  \"tags\": {}\r\n}",
+      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/spark-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"SPARK\",\r\n      \"componentVersion\": {\r\n        \"Spark\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"3780cb64828841d2a3bc08febda3d7fc\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-10-28T06:32:25.9\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 48\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.16\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": true\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"yk01wasb666666666666.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Storage/storageAccounts/yk01wasb666666666666\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"hdi-2025-10-28t06-31-30-379z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/hdi\",\r\n  \"name\": \"hdi\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"2e2c6cd8-091b-48ba-9248-fffd4da9ff5c\",\r\n  \"tags\": {\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.0\": \"\",\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.1\": \"\",\r\n    \"ms.inv.v0.backedby.origin.tenantid\": \"\",\r\n    \"ms.inv.v0.security.ownerrole\": \"\"\r\n  },\r\n  \"identity\": {\r\n    \"type\": \"SystemAssigned\",\r\n    \"principalId\": \"b780faba-b7b4-4e69-bc40-bb7f1341429d\",\r\n    \"tenantId\": \"72f988bf-86f1-41af-91ab-2d7cd011db47\"\r\n  }\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster?api-version=2025-01-15-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwL3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvcHMtdGVzdC1jbHVzdGVyP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
+      "RequestUri": "/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/hdi?api-version=2025-01-15-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOTY0YzEwYmItOGE2Yy00M2JjLTgzZDMtNmIzMThjNmM3MzA1L3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvaGRpP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept-Language": [
           "en-US"
         ],
         "x-ms-client-request-id": [
-          "4647e8c5-564c-4eda-a75e-c8daf9bcc2c1"
+          "42c47100-43f7-4621-a5d0-bf2ec908fd26"
         ],
         "User-Agent": [
-          "FxVersion/8.0.1825.31117",
+          "FxVersion/8.0.2125.47513",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.26100",
-          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.3.1"
+          "OSVersion/Microsoft.Windows.10.0.26200",
+          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.4.0"
         ]
       },
       "RequestBody": "",
@@ -171,13 +165,16 @@
           "no-cache"
         ],
         "x-ms-request-id": [
-          "b580d949-0346-4db9-a435-978994d5d9b7"
+          "198e6eb3-3126-45ff-bc36-12ebe6b34163"
         ],
         "x-ms-hdi-served-by": [
           "eastasia"
         ],
         "x-ms-correlation-request-id": [
-          "783fa9ae-03d3-4c79-b70e-3c2516846a96"
+          "2502c319-8781-49a2-95a5-45c2177bc6c8"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
           "1099"
@@ -186,7 +183,7 @@
           "16499"
         ],
         "x-ms-routing-request-id": [
-          "EASTASIA:20250804T020837Z:783fa9ae-03d3-4c79-b70e-3c2516846a96"
+          "SOUTHEASTASIA:20251028T074536Z:2502c319-8781-49a2-95a5-45c2177bc6c8"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -194,17 +191,11 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
-        "X-Cache": [
-          "CONFIG_NOCACHE"
-        ],
-        "X-MSEdge-Ref": [
-          "Ref A: 01D5AF379A0E4D21B10F0F0BAF2F5153 Ref B: TYO201100117021 Ref C: 2025-08-04T02:08:36Z"
-        ],
         "Date": [
-          "Mon, 04 Aug 2025 02:08:36 GMT"
+          "Tue, 28 Oct 2025 07:45:35 GMT"
         ],
         "Content-Length": [
-          "3393"
+          "3616"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -213,25 +204,25 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/hadoop-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"HADOOP\",\r\n      \"componentVersion\": {\r\n        \"Hadoop\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"b38c3d04715249cdaf7c588e449fabae\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e4_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-08-01T09:21:52.187\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 40\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.223\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": false\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"storagepstest1508.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test7390/providers/Microsoft.Storage/storageAccounts/storagepstest1508\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"ps-test-cluster-2025-08-01t09-20-50-533z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster\",\r\n  \"name\": \"ps-test-cluster\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"4b4d3c9e-903d-4e80-bf85-1721f193840d\",\r\n  \"tags\": {}\r\n}",
+      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/spark-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"SPARK\",\r\n      \"componentVersion\": {\r\n        \"Spark\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"3780cb64828841d2a3bc08febda3d7fc\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-10-28T06:32:25.9\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 48\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.16\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": true\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"yk01wasb666666666666.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Storage/storageAccounts/yk01wasb666666666666\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"hdi-2025-10-28t06-31-30-379z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/hdi\",\r\n  \"name\": \"hdi\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"2e2c6cd8-091b-48ba-9248-fffd4da9ff5c\",\r\n  \"tags\": {\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.0\": \"\",\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.1\": \"\",\r\n    \"ms.inv.v0.backedby.origin.tenantid\": \"\",\r\n    \"ms.inv.v0.security.ownerrole\": \"\"\r\n  },\r\n  \"identity\": {\r\n    \"type\": \"SystemAssigned\",\r\n    \"principalId\": \"b780faba-b7b4-4e69-bc40-bb7f1341429d\",\r\n    \"tenantId\": \"72f988bf-86f1-41af-91ab-2d7cd011db47\"\r\n  }\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster?api-version=2025-01-15-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwL3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvcHMtdGVzdC1jbHVzdGVyP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
+      "RequestUri": "/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/hdi?api-version=2025-01-15-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOTY0YzEwYmItOGE2Yy00M2JjLTgzZDMtNmIzMThjNmM3MzA1L3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvaGRpP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept-Language": [
           "en-US"
         ],
         "x-ms-client-request-id": [
-          "c9551a54-bbea-4579-ae80-e225f088fe78"
+          "126131a3-eb13-44d0-b9fa-42845938af76"
         ],
         "User-Agent": [
-          "FxVersion/8.0.1825.31117",
+          "FxVersion/8.0.2125.47513",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.26100",
-          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.3.1"
+          "OSVersion/Microsoft.Windows.10.0.26200",
+          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.4.0"
         ]
       },
       "RequestBody": "",
@@ -243,13 +234,16 @@
           "no-cache"
         ],
         "x-ms-request-id": [
-          "c6c72c38-0fe2-46b1-9fa7-5589e15e6a72"
+          "722f8fcf-c887-4e53-861d-3e72d55f61e1"
         ],
         "x-ms-hdi-served-by": [
           "eastasia"
         ],
         "x-ms-correlation-request-id": [
-          "7bea5044-8ed8-4078-8e26-126f6db3af8d"
+          "524e1a5f-8922-4aaf-af98-fbee129c4528"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
           "1099"
@@ -258,7 +252,7 @@
           "16499"
         ],
         "x-ms-routing-request-id": [
-          "EASTASIA:20250804T021013Z:7bea5044-8ed8-4078-8e26-126f6db3af8d"
+          "SOUTHEASTASIA:20251028T074710Z:524e1a5f-8922-4aaf-af98-fbee129c4528"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -266,17 +260,11 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
-        "X-Cache": [
-          "CONFIG_NOCACHE"
-        ],
-        "X-MSEdge-Ref": [
-          "Ref A: C9BA5C1901E747CC82521AE6081E124E Ref B: TYO201100115017 Ref C: 2025-08-04T02:10:13Z"
-        ],
         "Date": [
-          "Mon, 04 Aug 2025 02:10:13 GMT"
+          "Tue, 28 Oct 2025 07:47:10 GMT"
         ],
         "Content-Length": [
-          "3393"
+          "3616"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -285,25 +273,25 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/hadoop-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"HADOOP\",\r\n      \"componentVersion\": {\r\n        \"Hadoop\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"b38c3d04715249cdaf7c588e449fabae\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e4_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-08-01T09:21:52.187\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 40\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.223\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": false\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"storagepstest1508.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test7390/providers/Microsoft.Storage/storageAccounts/storagepstest1508\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"ps-test-cluster-2025-08-01t09-20-50-533z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster\",\r\n  \"name\": \"ps-test-cluster\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"4b4d3c9e-903d-4e80-bf85-1721f193840d\",\r\n  \"tags\": {}\r\n}",
+      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/spark-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"SPARK\",\r\n      \"componentVersion\": {\r\n        \"Spark\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"3780cb64828841d2a3bc08febda3d7fc\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-10-28T06:32:25.9\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 48\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.16\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": true\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"yk01wasb666666666666.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Storage/storageAccounts/yk01wasb666666666666\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"hdi-2025-10-28t06-31-30-379z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/hdi\",\r\n  \"name\": \"hdi\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"2e2c6cd8-091b-48ba-9248-fffd4da9ff5c\",\r\n  \"tags\": {\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.0\": \"\",\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.1\": \"\",\r\n    \"ms.inv.v0.backedby.origin.tenantid\": \"\",\r\n    \"ms.inv.v0.security.ownerrole\": \"\"\r\n  },\r\n  \"identity\": {\r\n    \"type\": \"SystemAssigned\",\r\n    \"principalId\": \"b780faba-b7b4-4e69-bc40-bb7f1341429d\",\r\n    \"tenantId\": \"72f988bf-86f1-41af-91ab-2d7cd011db47\"\r\n  }\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster?api-version=2025-01-15-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwL3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvcHMtdGVzdC1jbHVzdGVyP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
+      "RequestUri": "/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/hdi?api-version=2025-01-15-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOTY0YzEwYmItOGE2Yy00M2JjLTgzZDMtNmIzMThjNmM3MzA1L3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvaGRpP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept-Language": [
           "en-US"
         ],
         "x-ms-client-request-id": [
-          "795febf5-5f04-4ed8-a8d5-d6ba5a921b92"
+          "af3bae4d-8e63-4283-9480-922282939f40"
         ],
         "User-Agent": [
-          "FxVersion/8.0.1825.31117",
+          "FxVersion/8.0.2125.47513",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.26100",
-          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.3.1"
+          "OSVersion/Microsoft.Windows.10.0.26200",
+          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.4.0"
         ]
       },
       "RequestBody": "",
@@ -315,13 +303,16 @@
           "no-cache"
         ],
         "x-ms-request-id": [
-          "d3e66d5b-eb66-4a0d-a188-d236fa68f1ec"
+          "369a4298-cf70-47e2-a06b-add01f202d4d"
         ],
         "x-ms-hdi-served-by": [
           "eastasia"
         ],
         "x-ms-correlation-request-id": [
-          "05076ae2-3254-4754-bb3c-1a4933c4761f"
+          "04b95a18-faa6-4ace-abbb-fb796083637c"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
           "1099"
@@ -330,7 +321,7 @@
           "16499"
         ],
         "x-ms-routing-request-id": [
-          "EASTASIA:20250804T021016Z:05076ae2-3254-4754-bb3c-1a4933c4761f"
+          "SOUTHEASTASIA:20251028T074713Z:04b95a18-faa6-4ace-abbb-fb796083637c"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -338,17 +329,11 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
-        "X-Cache": [
-          "CONFIG_NOCACHE"
-        ],
-        "X-MSEdge-Ref": [
-          "Ref A: ADF403F01C05478B97C916B3426C4D6A Ref B: TYO201100117019 Ref C: 2025-08-04T02:10:15Z"
-        ],
         "Date": [
-          "Mon, 04 Aug 2025 02:10:15 GMT"
+          "Tue, 28 Oct 2025 07:47:12 GMT"
         ],
         "Content-Length": [
-          "3393"
+          "3616"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -357,25 +342,25 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/hadoop-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"HADOOP\",\r\n      \"componentVersion\": {\r\n        \"Hadoop\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"b38c3d04715249cdaf7c588e449fabae\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e4_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-08-01T09:21:52.187\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 40\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.223\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": false\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"storagepstest1508.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test7390/providers/Microsoft.Storage/storageAccounts/storagepstest1508\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"ps-test-cluster-2025-08-01t09-20-50-533z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster\",\r\n  \"name\": \"ps-test-cluster\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"4b4d3c9e-903d-4e80-bf85-1721f193840d\",\r\n  \"tags\": {}\r\n}",
+      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/spark-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"SPARK\",\r\n      \"componentVersion\": {\r\n        \"Spark\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"3780cb64828841d2a3bc08febda3d7fc\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-10-28T06:32:25.9\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 48\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.16\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": true\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"yk01wasb666666666666.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Storage/storageAccounts/yk01wasb666666666666\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"hdi-2025-10-28t06-31-30-379z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/hdi\",\r\n  \"name\": \"hdi\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"2e2c6cd8-091b-48ba-9248-fffd4da9ff5c\",\r\n  \"tags\": {\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.0\": \"\",\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.1\": \"\",\r\n    \"ms.inv.v0.backedby.origin.tenantid\": \"\",\r\n    \"ms.inv.v0.security.ownerrole\": \"\"\r\n  },\r\n  \"identity\": {\r\n    \"type\": \"SystemAssigned\",\r\n    \"principalId\": \"b780faba-b7b4-4e69-bc40-bb7f1341429d\",\r\n    \"tenantId\": \"72f988bf-86f1-41af-91ab-2d7cd011db47\"\r\n  }\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster?api-version=2025-01-15-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwL3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvcHMtdGVzdC1jbHVzdGVyP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
+      "RequestUri": "/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/hdi?api-version=2025-01-15-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOTY0YzEwYmItOGE2Yy00M2JjLTgzZDMtNmIzMThjNmM3MzA1L3Jlc291cmNlR3JvdXBzL2dyb3VwLXBzLXRlc3QvcHJvdmlkZXJzL01pY3Jvc29mdC5IREluc2lnaHQvY2x1c3RlcnMvaGRpP2FwaS12ZXJzaW9uPTIwMjUtMDEtMTUtcHJldmlldw==",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept-Language": [
           "en-US"
         ],
         "x-ms-client-request-id": [
-          "cb262b31-76b8-47bf-a139-695e03cd85de"
+          "7544de04-087d-43c3-875f-6cd5c83eb2da"
         ],
         "User-Agent": [
-          "FxVersion/8.0.1825.31117",
+          "FxVersion/8.0.2125.47513",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.26100",
-          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.3.1"
+          "OSVersion/Microsoft.Windows.10.0.26200",
+          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.4.0"
         ]
       },
       "RequestBody": "",
@@ -387,13 +372,16 @@
           "no-cache"
         ],
         "x-ms-request-id": [
-          "235dd20b-d784-4ea6-86ac-8ccbd75cb992"
+          "851dd073-44a2-4c9f-98f2-9e93041981fb"
         ],
         "x-ms-hdi-served-by": [
           "eastasia"
         ],
         "x-ms-correlation-request-id": [
-          "e16cf294-c743-41d0-bb08-87ca4826e920"
+          "7dbfb4a9-6e93-4aa7-8b39-eaf26bf4d1c3"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
           "1099"
@@ -402,7 +390,7 @@
           "16499"
         ],
         "x-ms-routing-request-id": [
-          "EASTASIA:20250804T021022Z:e16cf294-c743-41d0-bb08-87ca4826e920"
+          "SOUTHEASTASIA:20251028T074721Z:7dbfb4a9-6e93-4aa7-8b39-eaf26bf4d1c3"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -410,17 +398,11 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
-        "X-Cache": [
-          "CONFIG_NOCACHE"
-        ],
-        "X-MSEdge-Ref": [
-          "Ref A: 0A46CCD89FF9410599BEFBEA9A89F8F6 Ref B: TYO201100116039 Ref C: 2025-08-04T02:10:21Z"
-        ],
         "Date": [
-          "Mon, 04 Aug 2025 02:10:21 GMT"
+          "Tue, 28 Oct 2025 07:47:20 GMT"
         ],
         "Content-Length": [
-          "3393"
+          "3616"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -429,25 +411,25 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/hadoop-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"HADOOP\",\r\n      \"componentVersion\": {\r\n        \"Hadoop\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"b38c3d04715249cdaf7c588e449fabae\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e4_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia\",\r\n            \"subnet\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk02networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-08-01T09:21:52.187\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 40\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"ps-test-cluster-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.223\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": false\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"storagepstest1508.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test7390/providers/Microsoft.Storage/storageAccounts/storagepstest1508\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"ps-test-cluster-2025-08-01t09-20-50-533z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/ps-test-cluster\",\r\n  \"name\": \"ps-test-cluster\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"4b4d3c9e-903d-4e80-bf85-1721f193840d\",\r\n  \"tags\": {}\r\n}",
+      "ResponseBody": "{\r\n  \"properties\": {\r\n    \"clusterVersion\": \"5.1.3000.0\",\r\n    \"clusterHdpVersion\": \"5.1-0\",\r\n    \"osType\": \"Linux\",\r\n    \"clusterDefinition\": {\r\n      \"blueprint\": \"https://blueprints.azurehdinsight.net/spark-5.1.3000.0.2506160526.json\",\r\n      \"kind\": \"SPARK\",\r\n      \"componentVersion\": {\r\n        \"Spark\": \"3.3\"\r\n      }\r\n    },\r\n    \"clusterId\": \"3780cb64828841d2a3bc08febda3d7fc\",\r\n    \"computeProfile\": {\r\n      \"roles\": [\r\n        {\r\n          \"name\": \"headnode\",\r\n          \"targetInstanceCount\": 2,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"workernode\",\r\n          \"targetInstanceCount\": 4,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_e8_v3\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        },\r\n        {\r\n          \"name\": \"zookeepernode\",\r\n          \"targetInstanceCount\": 3,\r\n          \"hardwareProfile\": {\r\n            \"vmSize\": \"standard_a2_v2\"\r\n          },\r\n          \"osProfile\": {\r\n            \"linuxOperatingSystemProfile\": {\r\n              \"username\": \"sshuser\"\r\n            }\r\n          },\r\n          \"virtualNetworkProfile\": {\r\n            \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia\",\r\n            \"subnet\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Network/virtualNetworks/yk04networkeastasia/subnets/default\"\r\n          },\r\n          \"encryptDataDisks\": false\r\n        }\r\n      ]\r\n    },\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"clusterState\": \"Running\",\r\n    \"createdDate\": \"2025-10-28T06:32:25.9\",\r\n    \"quotaInfo\": {\r\n      \"coresUsed\": 48\r\n    },\r\n    \"connectivityEndpoints\": [\r\n      {\r\n        \"name\": \"SSH\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi-ssh.azurehdinsight.net\",\r\n        \"port\": 22\r\n      },\r\n      {\r\n        \"name\": \"HTTPS\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi.azurehdinsight.net\",\r\n        \"port\": 443\r\n      },\r\n      {\r\n        \"name\": \"HTTPS-INTERNAL\",\r\n        \"protocol\": \"TCP\",\r\n        \"location\": \"hdi-int.azurehdinsight.net\",\r\n        \"port\": 443,\r\n        \"privateIPAddress\": \"10.0.0.16\"\r\n      }\r\n    ],\r\n    \"tier\": \"standard\",\r\n    \"encryptionInTransitProperties\": {\r\n      \"isEncryptionInTransitEnabled\": true\r\n    },\r\n    \"storageProfile\": {\r\n      \"storageaccounts\": [\r\n        {\r\n          \"name\": \"yk01wasb666666666666.blob.core.windows.net\",\r\n          \"resourceId\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo1/providers/Microsoft.Storage/storageAccounts/yk01wasb666666666666\",\r\n          \"msiResourceId\": null,\r\n          \"key\": null,\r\n          \"fileSystem\": null,\r\n          \"container\": \"hdi-2025-10-28t06-31-30-379z\",\r\n          \"saskey\": null,\r\n          \"isDefault\": true,\r\n          \"enableSecureChannel\": true,\r\n          \"fileshare\": null\r\n        }\r\n      ]\r\n    },\r\n    \"minSupportedTlsVersion\": \"1.2\",\r\n    \"excludedServicesConfig\": {\r\n      \"excludedServicesConfigId\": \"default\",\r\n      \"excludedServicesList\": \"\"\r\n    },\r\n    \"computeIsolationProperties\": {\r\n      \"enableComputeIsolation\": false,\r\n      \"hostSku\": null\r\n    }\r\n  },\r\n  \"id\": \"/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/group-ps-test/providers/Microsoft.HDInsight/clusters/hdi\",\r\n  \"name\": \"hdi\",\r\n  \"type\": \"Microsoft.HDInsight/clusters\",\r\n  \"location\": \"East Asia\",\r\n  \"etag\": \"2e2c6cd8-091b-48ba-9248-fffd4da9ff5c\",\r\n  \"tags\": {\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.0\": \"\",\r\n    \"ms.inv.v0.backedby.origin.sourcearmid.1\": \"\",\r\n    \"ms.inv.v0.backedby.origin.tenantid\": \"\",\r\n    \"ms.inv.v0.security.ownerrole\": \"\"\r\n  },\r\n  \"identity\": {\r\n    \"type\": \"SystemAssigned\",\r\n    \"principalId\": \"b780faba-b7b4-4e69-bc40-bb7f1341429d\",\r\n    \"tenantId\": \"72f988bf-86f1-41af-91ab-2d7cd011db47\"\r\n  }\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.HDInsight/locations/East%20Asia/capabilities?api-version=2025-01-15-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwL3Byb3ZpZGVycy9NaWNyb3NvZnQuSERJbnNpZ2h0L2xvY2F0aW9ucy9FYXN0JTIwQXNpYS9jYXBhYmlsaXRpZXM/YXBpLXZlcnNpb249MjAyNS0wMS0xNS1wcmV2aWV3",
+      "RequestUri": "/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/providers/Microsoft.HDInsight/locations/East%20Asia/capabilities?api-version=2025-01-15-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOTY0YzEwYmItOGE2Yy00M2JjLTgzZDMtNmIzMThjNmM3MzA1L3Byb3ZpZGVycy9NaWNyb3NvZnQuSERJbnNpZ2h0L2xvY2F0aW9ucy9FYXN0JTIwQXNpYS9jYXBhYmlsaXRpZXM/YXBpLXZlcnNpb249MjAyNS0wMS0xNS1wcmV2aWV3",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept-Language": [
           "en-US"
         ],
         "x-ms-client-request-id": [
-          "e3f4e57e-815c-4f69-9752-cea3b4a6872f"
+          "e515acb0-2515-4ff2-80d8-dc603eb698c9"
         ],
         "User-Agent": [
-          "FxVersion/8.0.1825.31117",
+          "FxVersion/8.0.2125.47513",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.26100",
-          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.3.1"
+          "OSVersion/Microsoft.Windows.10.0.26200",
+          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.4.0"
         ]
       },
       "RequestBody": "",
@@ -459,16 +441,19 @@
           "no-cache"
         ],
         "x-ms-request-id": [
-          "1078d7ae-9c91-4de4-a1eb-ffbae264e058"
+          "e00da90d-9627-4004-9f57-beee7723f035"
         ],
         "x-ms-hdi-served-by": [
           "eastasia"
         ],
         "x-ms-correlation-request-id": [
-          "c41c5a2e-cb6b-4fed-80db-d270cbfcb19a"
+          "22fc3492-946f-452b-b314-220b60667e35"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
         ],
         "x-ms-operation-identifier": [
-          "tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47,objectId=9cd85b81-c262-44da-bc33-96c3b8c182d3/japaneast/9f996148-7af7-4ecd-8b7b-3a51e17471dd"
+          "tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47,objectId=9cd85b81-c262-44da-bc33-96c3b8c182d3/southeastasia/ee79baf2-a4b2-43e7-a8f6-7de1304133a6"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
           "1099"
@@ -477,7 +462,7 @@
           "16499"
         ],
         "x-ms-routing-request-id": [
-          "JAPANEAST:20250804T020828Z:c41c5a2e-cb6b-4fed-80db-d270cbfcb19a"
+          "SOUTHEASTASIA:20251028T074456Z:22fc3492-946f-452b-b314-220b60667e35"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -485,17 +470,11 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
-        "X-Cache": [
-          "CONFIG_NOCACHE"
-        ],
-        "X-MSEdge-Ref": [
-          "Ref A: 9F274437412347D3B5720B15B3B802A0 Ref B: TYO01EDGE1020 Ref C: 2025-08-04T02:08:28Z"
-        ],
         "Date": [
-          "Mon, 04 Aug 2025 02:08:28 GMT"
+          "Tue, 28 Oct 2025 07:44:55 GMT"
         ],
         "Content-Length": [
-          "15498"
+          "15449"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -504,25 +483,25 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"versions\": {\r\n    \"paas\": {\r\n      \"available\": []\r\n    },\r\n    \"iaas\": {\r\n      \"available\": [\r\n        {\r\n          \"friendlyName\": \"4.0\",\r\n          \"displayName\": \"Version 5.0.3000.0.2504081919\",\r\n          \"isDefault\": false,\r\n          \"componentVersions\": {\r\n            \"HDP\": \"3.0\",\r\n            \"Hadoop\": \"3.1.0\",\r\n            \"HBase\": \"2.1.6\",\r\n            \"InteractiveHive\": \"3.1\",\r\n            \"Kafka\": \"2.1.1\"\r\n          }\r\n        },\r\n        {\r\n          \"friendlyName\": \"5.0\",\r\n          \"displayName\": \"Version 5.0.3000.1.2504081919\",\r\n          \"isDefault\": false,\r\n          \"componentVersions\": {\r\n            \"Spark\": \"3.1\",\r\n            \"InteractiveHive\": \"3.1\",\r\n            \"Kafka\": \"2.4.1\"\r\n          }\r\n        },\r\n        {\r\n          \"friendlyName\": \"5.1\",\r\n          \"displayName\": \"Version 5.1.3000.0.2506160526\",\r\n          \"isDefault\": false,\r\n          \"componentVersions\": {\r\n            \"Kafka\": \"3.2.0\",\r\n            \"HBase\": \"2.4.11\",\r\n            \"InteractiveHive\": \"3.1.2\",\r\n            \"Hadoop\": \"3.3.4\",\r\n            \"Spark\": \"3.3.0\"\r\n          }\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"regions\": {\r\n    \"paas\": {\r\n      \"available\": [\r\n        \"EAST ASIA\"\r\n      ]\r\n    },\r\n    \"iaas\": {\r\n      \"available\": [\r\n        \"EAST ASIA\"\r\n      ]\r\n    }\r\n  },\r\n  \"features\": [\r\n    \"ADD_ALL_NEW_HOSTS_WHEN_AMBARI_ADD_HOSTS_SUCCEEDED\",\r\n    \"ADD_NAME_RESERVATION_RECORD\",\r\n    \"ADD_RP_TO_DEDICATED_SQL_SERVER_ACL\",\r\n    \"ALLOW_CX_TO_USE_HDI_RESERVED_SERVICE_TAGS\",\r\n    \"ALLOW_GATEWAY_AUTH_BYPASS\",\r\n    \"ALLOW_IP_WHITELISTING_WITH_SERVICE_TAGS\",\r\n    \"ALLOW_RANGER_BYPASS_AUTH_IN_GATEWAY_3_6\",\r\n    \"ALLOW_RANGER_BYPASS_AUTH_IN_GATEWAY_4_0\",\r\n    \"ALLOW_RANGER_BYPASS_AUTH_IN_GATEWAY_5_0\",\r\n    \"ALLOW_RP_ACCESS_TO_CUSTOMER_SQL_DB\",\r\n    \"ALLOW_RP_ACCESS_TO_STORAGE_ACCOUNTS\",\r\n    \"ALLOW_SECURE_HADOOP_CLUSTER_TYPE_3_6\",\r\n    \"ALLOW_SECURE_HADOOP_CLUSTER_TYPE_99_200\",\r\n    \"ALLOW_SECURE_HBASE_CLUSTER_TYPE_3_6\",\r\n    \"ALLOW_SECURE_HBASE_CLUSTER_TYPE_99_200\",\r\n    \"ALLOW_SECURE_INTERACTIVEHIVE_CLUSTER_TYPE_3_6\",\r\n    \"ALLOW_SECURE_INTERACTIVEHIVE_CLUSTER_TYPE_99_200\",\r\n    \"ALLOW_SECURE_KAFKA_CLUSTER_TYPE_3_6\",\r\n    \"ALLOW_SECURE_KAFKA_CLUSTER_TYPE_99_200\",\r\n    \"ALLOW_SECURE_SPARK_CLUSTER_TYPE_3_6\",\r\n    \"ALLOW_SECURE_SPARK_CLUSTER_TYPE_99_200\",\r\n    \"ALLOW_VMSS_WITH_VNET\",\r\n    \"ALLOW_WASB_WITH_MSI\",\r\n    \"AMBARI_PARALLEL_ESP_FEATURE\",\r\n    \"AMBARI_PERF_IMPROVEMENTS_ENABLED\",\r\n    \"AMBARI_SERVER_ENABLE_DB_PURGE_FEATURE\",\r\n    \"AMBARI_SERVER_OVERRIDE_MAX_HEAP_SIZE\",\r\n    \"ASSOCIATE_DEDICATED_SQL_SERVER_WITH_NSP\",\r\n    \"AUTOSCALE_INTERACTIVEHIVE_SECURE_5_0\",\r\n    \"AUX_IAAS_FUNCTIONALITIES\",\r\n    \"AVAILABILITY_ZONES\",\r\n    \"AZSECPACK_CODE_INTEGRITY_ENFORCE\",\r\n    \"BLOCK_GATEWAY_5986_PORT\",\r\n    \"CHECK_ABORTED_HOST_COUNT_FOR_ADDING_HOSTS\",\r\n    \"CHECK_OPERATIONAL_HOSTS_BEFORE_ROLLBACK\",\r\n    \"CHECK_VHD_AVAILABILITY_IN_STORAGE_ACCOUNT\",\r\n    \"CLUSTER_RESIZE\",\r\n    \"CLUSTER_WITH_MANAGED_DISK_AZ_SUPPORT\",\r\n    \"CLUSTERS_CONTRACT_1\",\r\n    \"CLUSTERS_CONTRACT_1_SDK\",\r\n    \"CLUSTERS_CONTRACT_2_SDK\",\r\n    \"CLUSTERS_CONTRACT_VERSION_3_SDK\",\r\n    \"COLLECTANONYMIZEDLOGS\",\r\n    \"CONTAINER_LOG_COLLECTOR\",\r\n    \"CONTAINER_RESOURCE_V3\",\r\n    \"CUSTOM_ACTIONS_V2\",\r\n    \"DATALAKE\",\r\n    \"DATALAKE_3_2\",\r\n    \"DATALAKE_3_4\",\r\n    \"DATALAKE_3_5\",\r\n    \"DATALAKE_3_6\",\r\n    \"DATALAKE_4_0\",\r\n    \"DATALAKE_5_0\",\r\n    \"DATALAKE_5_1\",\r\n    \"DATALAKE_6_0\",\r\n    \"DATALAKE_99_200\",\r\n    \"DATALAKE_99_201\",\r\n    \"DATALAKE_DEFAULTFS_3_5\",\r\n    \"DATALAKE_DEFAULTFS_3_6\",\r\n    \"DATALAKE_DEFAULTFS_4_0\",\r\n    \"DATALAKE_DEFAULTFS_5_0\",\r\n    \"DATALAKE_DEFAULTFS_5_1\",\r\n    \"DATALAKE_DEFAULTFS_6_0\",\r\n    \"DATALAKE_DEFAULTFS_99_200\",\r\n    \"DATALAKE_DEFAULTFS_99_201\",\r\n    \"DEALLOCATE_SUSPENDED_SUBSCRIPTION\",\r\n    \"DEFAULT_CONTAINER_IDENTIFIER_AND_STORAGEFQDN_ALREADY_USED\",\r\n    \"DENY_DEDICATED_STORAGE_PUBLIC_ACCESS\",\r\n    \"DISABLE_COMMERCE_API_BILLING\",\r\n    \"DISABLE_DATABASE_CONNECTION_STRING_ENCRYPT\",\r\n    \"DISTRO\",\r\n    \"DISTRO_3_6\",\r\n    \"DISTRO_4_0\",\r\n    \"DISTRO_5_0\",\r\n    \"DISTRO_5_1\",\r\n    \"DISTRO_6_0\",\r\n    \"DOCUMENT_VALIDATION_IN_API\",\r\n    \"DOCUMENT_VALIDATION_IN_API_FOR_PUT\",\r\n    \"ENABLE_AADONLY_AUTH_FOR_DEDICATED_SQL_SERVER\",\r\n    \"ENABLE_ABFS_ENDPOINT\",\r\n    \"ENABLE_ARM_ENDPOINT_FROM_REQUEST_REFERER\",\r\n    \"ENABLE_ARMTEMPLATE_DELEGATION_SAS_IN_CLUSTER\",\r\n    \"ENABLE_ASSOCIATE_DEDICATED_PROVISIONING_STORAGE_WITH_NSP\",\r\n    \"ENABLE_AUTOSCALE_INTERACTIVEHIVE\",\r\n    \"ENABLE_AUTOSCALE_SPARK_3_0\",\r\n    \"ENABLE_AUTOSCALE_SPARK_3_1\",\r\n    \"ENABLE_AUTOSCALE_V2\",\r\n    \"ENABLE_AUTOSCALE_V2_QUEUE_MSI_ACCESS\",\r\n    \"ENABLE_AUTOSCALE_V2_WHEN_UPDATE_CONFIGURATION\",\r\n    \"ENABLE_AZURE_MONITOR_AGENT\",\r\n    \"ENABLE_BYO_DATABASE_MSI_IN_CLUSTER\",\r\n    \"ENABLE_CERTIFICATE_MANAGER_FOR_KAFKAHIB\",\r\n    \"ENABLE_CERTIFICATE_MANAGER_FOR_TLSWILDCARD\",\r\n    \"ENABLE_CLUSTER_MONITORING_ENDPOINT\",\r\n    \"ENABLE_COMPUTE_ISOLATION\",\r\n    \"ENABLE_CUSTOM_SCALE_SCRIPT_TIMEOUT\",\r\n    \"ENABLE_DEDICATED_SQL_ASSOCIATION_WITH_NSP_ENFORCED_MODE\",\r\n    \"ENABLE_DEFAULT_SECURITY_GROUP\",\r\n    \"ENABLE_DNS_CLEANUP_FOR_SECURE_CLUSTERS\",\r\n    \"ENABLE_ENCRYPTIONCERT_CERTIFICATE_RENEWER\",\r\n    \"ENABLE_ENTRA_USER_AUTH_IN_NONESP\",\r\n    \"ENABLE_EVENTHUB_API_BILLING\",\r\n    \"ENABLE_FORCE_OU_CONTAINER_DELETION\",\r\n    \"ENABLE_GATEWAY_SPECIALIZED_FD_AWARE_OVERPROVIONER\",\r\n    \"ENABLE_GCS\",\r\n    \"ENABLE_GENEVA_LOG_ANALYTICS_MONITORING\",\r\n    \"ENABLE_HDINSIGHT_DATA_DISKS_VALIDATOR\",\r\n    \"ENABLE_HOBO_DATABASE_MSI_IN_CLUSTER\",\r\n    \"ENABLE_IPSEC_BYDEFAULT_FOR_PORTAL\",\r\n    \"ENABLE_IPSECCERT_CERTIFICATE_RENEWER\",\r\n    \"ENABLE_KERBEROS_TICKET_SIZE\",\r\n    \"ENABLE_MDSDGCSCERTIFICATE_CERTIFICATE_RENEWER\",\r\n    \"ENABLE_MICROSOFT_GRAPH\",\r\n    \"ENABLE_MIN_SUPPORTED_TLS_VERSION_POLICY_FOR_GATEWAY\",\r\n    \"ENABLE_MONITORING_AGENT_SERVICE\",\r\n    \"ENABLE_MSI_CLIENT_V2\",\r\n    \"ENABLE_MSI_ESTSR\",\r\n    \"ENABLE_MSI_SNI\",\r\n    \"ENABLE_OVERRIDE_DEFAULT_CONFIGURATION\",\r\n    \"ENABLE_PERSIST_KDC_ADMIN_CREDENTIALS\",\r\n    \"ENABLE_PROVISIONING_STORAGE_MSI_IN_CLUSTER\",\r\n    \"ENABLE_PUBLIC_IP_TAG\",\r\n    \"ENABLE_PUBLIC_IP_VIRTUAL_TAG\",\r\n    \"ENABLE_RANGER_GROUP_SEARCH\",\r\n    \"ENABLE_REMOVE_STALE_SIGNING_CERT\",\r\n    \"ENABLE_RUBIX_IOCACHE_IN_BLUEPRINT\",\r\n    \"ENABLE_RUBIX_IOCACHE_IN_BLUEPRINT_FOR_WILDFIRE\",\r\n    \"ENABLE_RUN_SCRIPTS_AFTER_CERT_ROTATION\",\r\n    \"ENABLE_SECURE_TLS_GATEWAY_SETTINGS\",\r\n    \"ENABLE_STANDARD_IP_AND_LOAD_BALANCER\",\r\n    \"ENABLE_STOP_CLUSTER_MSI_IDENTITY_URL_UPDATE\",\r\n    \"ENABLE_TLSWILDCARD_CERTIFICATE_RENEWER\",\r\n    \"ENABLE_UPGRADE_VMSIZE_TO_V2\",\r\n    \"ENABLE_USING_CLUSTER_DEDICATED_PROVISIONING_STORAGE\",\r\n    \"ENABLE_YARN_EXCLUDE_FILE_XML_FORMAT\",\r\n    \"ENABLEDATALAKE\",\r\n    \"ENABLEGENEVAANALYTICS\",\r\n    \"ENFORCE_VNET_ACCESS_VALIDATE\",\r\n    \"FORCE_DELETE_AMBARI_HOSTS\",\r\n    \"FORCE_DELETE_VIRTUAL_MACHINE\",\r\n    \"GATEWAY_NODE_CODEINTEGRITY_PATCH_ALLVERSION\",\r\n    \"GATEWAY_NODE_PATCH_CODEINTEGRITY\",\r\n    \"GATEWAY_NODE_PATCH_CODEINTEGRITY_SKIP_ERROR\",\r\n    \"GATEWAY_NODE_PATCH_PATCHED_IMAGER\",\r\n    \"HADOOP_334_FOR_HDI_5_1_ENABLED\",\r\n    \"HADOOP_VIRTUAL_NETWORK_ENABLED\",\r\n    \"HBASE_2_4\",\r\n    \"HBASE_2411_FOR_HDI_5_1_ENABLED\",\r\n    \"HBASE_DATALAKE_DEFAULTFS_3_6\",\r\n    \"HDI_3_3_SPARK\",\r\n    \"HDP_2_6_3_ENABLED\",\r\n    \"HDP_2_6_3_PORTAL_ENABLED\",\r\n    \"HDP_2_6_5_ENABLED\",\r\n    \"HDP_2_6_5_PORTAL_ENABLED\",\r\n    \"HDP_2_6_7_ENABLED\",\r\n    \"HDP_2_6_7_PORTAL_ENABLED\",\r\n    \"HDP_3_0_ENABLED\",\r\n    \"HDP_3_0_PORTAL_ENABLED\",\r\n    \"HDP_3_1_ENABLED\",\r\n    \"HDP_3_1_PORTAL_ENABLED\",\r\n    \"HIGH_AVAILABILITY\",\r\n    \"HIVE_310_FOR_HDI_5_0_ENABLED\",\r\n    \"HIVE_312_FOR_HDI_5_1_ENABLED\",\r\n    \"HS2_ZK_ROUTER_HADOOP\",\r\n    \"HS2_ZK_ROUTER_SPARK\",\r\n    \"IAAS_ALLOW_CUSTOM_DNS\",\r\n    \"IAAS_AMBARI_APP_TIMELINE_SERVER_HA_SERVICE\",\r\n    \"IAAS_AMBARI_COMPONENT_INSTALL_RECOVERY\",\r\n    \"IAAS_AMBARI_DEPENDENCY_BASED_DEPLOYMENT\",\r\n    \"IAAS_AMBARI_HA_SERVICES\",\r\n    \"IAAS_AMBARI_HISTORYSERVER_HA_SERVICE\",\r\n    \"IAAS_AMBARI_JUPYTER_HA_SERVICE\",\r\n    \"IAAS_AMBARI_LIVY_HA_SERVICE_3_6\",\r\n    \"IAAS_AMBARI_LIVY_HA_SERVICE_4_0\",\r\n    \"IAAS_AMBARI_LIVY_HA_SERVICE_5_0\",\r\n    \"IAAS_AMBARI_LIVY_HA_SERVICE_99_201\",\r\n    \"IAAS_AMBARI_LOWER_LATENCY\",\r\n    \"IAAS_AMBARI_SKIP_COMPONENTS_INSTALL\",\r\n    \"IAAS_ARM_PROVISIONING\",\r\n    \"IAAS_CLEANUP_PHYSICAL_RESOURCES_ON_FAILED_CLUSTER_CREATE\",\r\n    \"IAAS_CLOSE_HEAD_HTTPS_END_POINT_AFTER_CLUSTER_CREATE\",\r\n    \"IAAS_CLUSTER_APPLICATION_ALLOW_MULTIPLE_ROLE_INSTANCES\",\r\n    \"IAAS_CLUSTER_APPLICATION_REMOVE\",\r\n    \"IAAS_CLUSTER_CONTAINER_PREUPLOAD_SUBMIT_WAIT\",\r\n    \"IAAS_CLUSTER_GATEWAY_MONITORING\",\r\n    \"IAAS_CLUSTER_MONITORING\",\r\n    \"IAAS_CLUSTER_RSERVER\",\r\n    \"IAAS_CLUSTER_STORAGE_MSI_VALIDATION_ENABLED\",\r\n    \"IAAS_DB_CREATION_IN_PARALLEL_TO_VM\",\r\n    \"IAAS_DELETE_LEAKED_RESOURCES\",\r\n    \"IAAS_DELETE_TEMPLATE_DEPLOYMENTS\",\r\n    \"IAAS_DEPLOYMENTS\",\r\n    \"IAAS_DO_NOT_CREATE_WASB_TABLES_IN_CUSTOMER_STORAGE\",\r\n    \"IAAS_ENABLE_ADLS_SECURE_OAUTH_TOKEN_REGISTRATION_FLOW\",\r\n    \"IAAS_ENABLE_AUTOSCALE\",\r\n    \"IAAS_ENABLE_BLOBCOPY\",\r\n    \"IAAS_ENABLE_CLUSTER_CONFIG_OVERRIDES\",\r\n    \"IAAS_ENABLE_CLUSTER_SIDE_VALIDATION\",\r\n    \"IAAS_ENABLE_DATABASE_COMPONENT_PIECEWISE_STARTUP\",\r\n    \"IAAS_ENABLE_DISK_ENCRYPTION\",\r\n    \"IAAS_ENABLE_ENCRYPTION_AT_HOST\",\r\n    \"IAAS_ENABLE_GATEWAY_AGENT_6\",\r\n    \"IAAS_ENABLE_GATEWAY_MISE\",\r\n    \"IAAS_ENABLE_INTERNAL_ENDPOINT\",\r\n    \"IAAS_ENABLE_IPSEC\",\r\n    \"IAAS_ENABLE_IPSEC_FOR_GATEWAY\",\r\n    \"IAAS_ENABLE_MSI\",\r\n    \"IAAS_ENABLE_OFFLINE_CLEANUP\",\r\n    \"IAAS_ENABLE_OFFLINE_CLEANUP_FOR_DELETING_VMS\",\r\n    \"IAAS_GET_DELETE_ERROR_CLUSTERS\",\r\n    \"IAAS_HDINSIGHT_HDFS_LOW_SAFEMODE_THRESHOLD\",\r\n    \"IAAS_HDINSIGHT_HDFS_SINGLE_REPLICA\",\r\n    \"IAAS_INCLUDE_STORAGE_IN_SUBSCRIPTION_SELECTION\",\r\n    \"IAAS_LAZY_PROVISIONING\",\r\n    \"IAAS_MOVE_OPERATIONAL_CLUSTER_TO_RUNNING\",\r\n    \"IAAS_PARALLEL_DB_CREATE\",\r\n    \"IAAS_PREPROVISION_METASTORES_SCHEMAS\",\r\n    \"IAAS_REDUCE_PAYLOAD_STORAGEACCOUNTS_FROM_METADATA\",\r\n    \"IAAS_RESTART_ID_BROKER_FOR_IPSEC_CERT_ROTATION\",\r\n    \"IAAS_SCRIPTACTIONS_DELETE_VMS_CRUD_FAILURES\",\r\n    \"IAAS_SCRIPTACTIONS_RUNNING\",\r\n    \"IAAS_SHORT_VM_NAME\",\r\n    \"IAAS_SHORT_VM_NAME_DEPLYOMENT_ID\",\r\n    \"IAAS_SUBMIT_AMBARI_REQUEST_ONCE_LINUX_VM_ARE_AVAILABLE\",\r\n    \"IAAS_TEZ_ATS_V15\",\r\n    \"IAAS_USE_NEW_FAST_BLOB_COPIER\",\r\n    \"IAAS_USE_UNATTENDED_UPGRADES_FOR_PATCHING\",\r\n    \"IAAS_VALIDATE_CUSTOM_VNET\",\r\n    \"IAAS_VALIDATE_NETWORK_FOR_SCALE_REQUEST\",\r\n    \"IAAS_VALIDATE_NSG\",\r\n    \"IAAS_VALIDATE_PROVISIONING_AGENT_STATE_FOR_IPSEC_CERT_ROTATION\",\r\n    \"IAAS_WAIT_FOR_CLOSING_HEAD_HTTPS_END_POINT_AFTER_CLUSTER_CREATE\",\r\n    \"IAAS_YARN_HDINSIGHT_HYBRID_TIMELINE_STORE\",\r\n    \"IAAS_YARN_HDINSIGHT_SQL_TIMELINE_STORE\",\r\n    \"IAAS_YARN_HDINSIGHT_TIMELINE_STORE\",\r\n    \"IDENTITY_BROKER\",\r\n    \"IGNORE_CUSTOM_METASTORE_FIREWALL_ERROR\",\r\n    \"IGNORE_FD_AND_UD_IN_OVER_PROVISIONER_FOR_WORKERNODES\",\r\n    \"IMAGE_1804\",\r\n    \"IMPORT_ENCRYPTION_CERT_AS_CERTIFICATE\",\r\n    \"INTERACTIVEHIVE\",\r\n    \"INTERACTIVEHIVE_3_6\",\r\n    \"INTERACTIVEHIVE_4_0\",\r\n    \"INTERACTIVEHIVE_5_0\",\r\n    \"INTERACTIVEHIVE_5_1\",\r\n    \"INTERACTIVEHIVE_99_200\",\r\n    \"INTERACTIVEHIVE_ADLS\",\r\n    \"INTERACTIVEHIVE_SCALING_ENABLED\",\r\n    \"KAFKA\",\r\n    \"KAFKA_2_4\",\r\n    \"KAFKA_241_FOR_HDI_5_0_ENABLED\",\r\n    \"KAFKA_3_2\",\r\n    \"KAFKA_3_5\",\r\n    \"KAFKA_3_6\",\r\n    \"KAFKA_320_FOR_HDI_5_1_ENABLED\",\r\n    \"KAFKA_4_0\",\r\n    \"KAFKA_5_0\",\r\n    \"KAFKA_5_1\",\r\n    \"KAFKA_6_0\",\r\n    \"KAFKA_EXCLUDE_NON_KAFKA_COMPONENTS\",\r\n    \"KAFKA_VNET_REQUIREMENT_OVERRIDE\",\r\n    \"KAFKA_WITHOUT_DATA_DISKS_OVERRIDE\",\r\n    \"KAFKAREST\",\r\n    \"KAFKAREST_HARDWAREOVERRIDE\",\r\n    \"LDAP_CERTIFICATE_RENEWAL\",\r\n    \"LINUX_MIN_VERSION_3.3\",\r\n    \"LINUX_NODE_PATCH\",\r\n    \"MANAGED_DISKS\",\r\n    \"MANAGED_DISKS_CRP_FD_REQUIREMENT_OVERRIDE\",\r\n    \"MANAGED_DISKS_HBASE\",\r\n    \"MANAGED_DISKS_SPARK_HADOOP\",\r\n    \"MD_HBASE_OPT_SCALEDOWN\",\r\n    \"MD_HBASE_SCALEDOWN_DEADNODE_FAILFAST\",\r\n    \"MDSCENTRALLOGGING\",\r\n    \"MLSERVICES_CLUSTERTYPE_3_6_ENABLED\",\r\n    \"MODIFY_AMBARI_HOST_OPERATIONAL\",\r\n    \"NETWORK_PROPERTIES\",\r\n    \"NODE_SETUP_POLLER_ENABLED\",\r\n    \"NOT_IMPORT_SSH_PUBLIC_KEY_AS_CERTIFICATE\",\r\n    \"ONLY_CHECK_NEW_ADDED_HOSTS_ARE_OPERATIONAL\",\r\n    \"OPTIMIZE_POST_SCALEUP_CUSTOMACTION\",\r\n    \"OVERPROVISION_HOSTGROUP_edgenode\",\r\n    \"OVERPROVISION_HOSTGROUP_Gateway\",\r\n    \"OVERPROVISION_HOSTGROUP_IDBROKERNODE\",\r\n    \"OVERPROVISION_HOSTGROUP_Workernode\",\r\n    \"OVERPROVISION_HOSTGROUP_zookeepernode\",\r\n    \"PERF_OPTIMIZED_RESOURCE_LOCATION_FETCH\",\r\n    \"PORTALAPPINSTALL\",\r\n    \"POWERSHELL_SCRIPT_ACTION\",\r\n    \"POWERSHELL_SCRIPT_ACTION_SDK\",\r\n    \"PREMIUM_TIER_PREVIEW\",\r\n    \"PRIVATE_LINK_CONFIGURATIONS\",\r\n    \"PROVISION_AZURE_RESOURCES_USING_SDKS\",\r\n    \"PROVISION_AZURE_RESOURCES_USING_SDKS_ONLY_WITH_VMSS\",\r\n    \"PROVISION_NETWORK_RESOURCES_IN_CLUSTER_RG\",\r\n    \"PROVISION_VIRTUALMACHINESCALESET\",\r\n    \"PROVISIONING_AGENT\",\r\n    \"QUERY_BLUEPRINT_FROM_AMBARI\",\r\n    \"QUEUE_TO_SERVICEFABRIC_RP\",\r\n    \"RACKAWARENESS_KAFKA\",\r\n    \"RANDOM_JDK_TRUSTSTORE_PASSWORD\",\r\n    \"RELAY_CONNECTION\",\r\n    \"RETRY_STOP_HOST_COMPONENTS\",\r\n    \"RMHA\",\r\n    \"ROUTE_TO_SERVICEFABRIC_API\",\r\n    \"RSERVER_CLUSTERTYPE_3_5_ENABLED\",\r\n    \"RSERVER_CLUSTERTYPE_3_6_ENABLED\",\r\n    \"RSERVER_CLUSTERTYPE_ENABLED\",\r\n    \"SCALING_QUOTA_VALIDATION\",\r\n    \"SECURE_HADOOP\",\r\n    \"SECURE_HADOOP_4_0\",\r\n    \"SECURE_HADOOP_5_0\",\r\n    \"SECURE_HADOOP_5_1\",\r\n    \"SECURE_HADOOP_DATALAKE_DEFAULTFS_3_5\",\r\n    \"SECURE_HADOOP_DATALAKE_DEFAULTFS_3_6\",\r\n    \"SECURE_HADOOP_DATALAKE_DEFAULTFS_99_200\",\r\n    \"SECURE_HADOOP_UI\",\r\n    \"SECURE_SPARK_SQL_WITH_FINE_GRAIN_CONTROL_ON_SPARK_CORE\",\r\n    \"SECURE_SPARK_USE_ADDITIONAL_STORAGE_WORKAROUND\",\r\n    \"SECURE_ZEPPELIN_KERBERIZED\",\r\n    \"SET_TLS_12_PLUS_AS_DEFAULT_FOR_GATEWAY\",\r\n    \"SHARED_IMAGE_GALLERY\",\r\n    \"SHARED_IMAGE_GALLERY_WITH_VM\",\r\n    \"SHOW_HUMBOLDT_GA\",\r\n    \"SHOW_IBIZA_CREATE\",\r\n    \"SKIP_DECOMNODEMANAGER_IF_AUTOSCALE\",\r\n    \"SKIP_LINUX_VM_RESTART_FOR_GCS_CERT_ROTATION\",\r\n    \"SKIP_RESOURCE_DELETION_ON_ERROR\",\r\n    \"SKIP_RESTART_MASTERSERVICES_ON_SCALE\",\r\n    \"SKIP_SCRIPT_VALIDATION\",\r\n    \"SPARK_2_1\",\r\n    \"SPARK_2_2\",\r\n    \"SPARK_3_0\",\r\n    \"SPARK_3_1\",\r\n    \"SPARK_312_FOR_HDI_5_0_ENABLED\",\r\n    \"SPARK_330_FOR_HDI_5_1_ENABLED\",\r\n    \"SPARK_EXPERIMENTAL\",\r\n    \"STORAGE_ACCOUNT_ENDPOINT_VALIDATION\",\r\n    \"STORM_PREVIEW\",\r\n    \"UI_CREATE_WIZARD_V2\",\r\n    \"USE_AGGRESSIVE_POLLING_FOR_SDK_PROVISIONING\",\r\n    \"USE_ENCRYPTION_CERT_FROM_KEYVAULT\",\r\n    \"USE_PARALLEL_VALIDATION_TASK_EXECUTION_STRATEGY\",\r\n    \"USE_PER_CLUSTER_TLS_CERT\",\r\n    \"USE_SIGNING_CERT_FROM_KEYVAULT\",\r\n    \"VIRTUAL_NETWORK_ENABLED\",\r\n    \"VM_FAMILY_QUOTA_USAGES\",\r\n    \"VM_FAMILY_QUOTA_VALIDATION\",\r\n    \"VMSIZES_AUX\",\r\n    \"VMSS_3.6.1000.67.2009101914\",\r\n    \"VMSS_4.0.2000.1.2009101914\",\r\n    \"VMSS_4.0.3000.1.2409240625\",\r\n    \"VMSS_4.0.3000.1.2411031700\",\r\n    \"VMSS_4.0.3000.1.2411071700\",\r\n    \"VMSS_4.0.3000.1.2411100555\",\r\n    \"VMSS_4.0.3000.1.2411260215\",\r\n    \"VMSS_4.0.3000.1.2412031700\",\r\n    \"VMSS_4.0.3000.1.2412080659\",\r\n    \"VMSS_4.0.3000.1.2412101019\",\r\n    \"VMSS_4.0.3000.1.2412120917\",\r\n    \"VMSS_4.0.3000.1.2412180316\",\r\n    \"VMSS_4.0.3000.1.2501131700\",\r\n    \"VMSS_4.0.3000.1.2501172330\",\r\n    \"VMSS_4.0.3000.1.2501280502\",\r\n    \"VMSS_4.0.3000.1.2501302312\",\r\n    \"VMSS_4.0.3000.1.2502121001\",\r\n    \"VMSS_4.0.3000.1.2502150359\",\r\n    \"VMSS_4.0.3000.1.2502181834\",\r\n    \"VMSS_4.0.3000.1.2502250356\",\r\n    \"VMSS_4.0.3000.1.2502262302\",\r\n    \"VMSS_4.0.3000.1.2503030945\",\r\n    \"VMSS_4.0.3000.1.2503082053\",\r\n    \"VMSS_4.0.3000.1.2503122058\",\r\n    \"VMSS_4.0.3000.1.2503212029\",\r\n    \"VMSS_4.0.3000.1.2503241442\",\r\n    \"VMSS_4.0.3000.1.2504081919\",\r\n    \"VMSS_5.0.3000.0.2310140099\",\r\n    \"VMSS_5.0.3000.0.2409240625\",\r\n    \"VMSS_5.0.3000.0.2411031700\",\r\n    \"VMSS_5.0.3000.0.2411071700\",\r\n    \"VMSS_5.0.3000.0.2411100555\",\r\n    \"VMSS_5.0.3000.0.2411141301\",\r\n    \"VMSS_5.0.3000.0.2411260215\",\r\n    \"VMSS_5.0.3000.0.2412031700\",\r\n    \"VMSS_5.0.3000.0.2412080659\",\r\n    \"VMSS_5.0.3000.0.2412101019\",\r\n    \"VMSS_5.0.3000.0.2412120917\",\r\n    \"VMSS_5.0.3000.0.2412180316\",\r\n    \"VMSS_5.0.3000.0.2501131700\",\r\n    \"VMSS_5.0.3000.0.2501172330\",\r\n    \"VMSS_5.0.3000.0.2501280502\",\r\n    \"VMSS_5.0.3000.0.2501302312\",\r\n    \"VMSS_5.0.3000.0.2502121001\",\r\n    \"VMSS_5.0.3000.0.2502150359\",\r\n    \"VMSS_5.0.3000.0.2502181834\",\r\n    \"VMSS_5.0.3000.0.2502250356\",\r\n    \"VMSS_5.0.3000.0.2502262302\",\r\n    \"VMSS_5.0.3000.0.2503030945\",\r\n    \"VMSS_5.0.3000.0.2503082053\",\r\n    \"VMSS_5.0.3000.0.2503122058\",\r\n    \"VMSS_5.0.3000.0.2503212029\",\r\n    \"VMSS_5.0.3000.0.2503241442\",\r\n    \"VMSS_5.0.3000.0.2504081919\",\r\n    \"VMSS_5.0.3000.1.2310140099\",\r\n    \"VMSS_5.0.3000.1.2409240625\",\r\n    \"VMSS_5.0.3000.1.2411031700\",\r\n    \"VMSS_5.0.3000.1.2411071700\",\r\n    \"VMSS_5.0.3000.1.2411100555\",\r\n    \"VMSS_5.0.3000.1.2411141301\",\r\n    \"VMSS_5.0.3000.1.2411260215\",\r\n    \"VMSS_5.0.3000.1.2412031700\",\r\n    \"VMSS_5.0.3000.1.2412080659\",\r\n    \"VMSS_5.0.3000.1.2412101019\",\r\n    \"VMSS_5.0.3000.1.2412120917\",\r\n    \"VMSS_5.0.3000.1.2412180316\",\r\n    \"VMSS_5.0.3000.1.2501131700\",\r\n    \"VMSS_5.0.3000.1.2501172330\",\r\n    \"VMSS_5.0.3000.1.2501280502\",\r\n    \"VMSS_5.0.3000.1.2501302312\",\r\n    \"VMSS_5.0.3000.1.2502121001\",\r\n    \"VMSS_5.0.3000.1.2502150359\",\r\n    \"VMSS_5.0.3000.1.2502181834\",\r\n    \"VMSS_5.0.3000.1.2502250356\",\r\n    \"VMSS_5.0.3000.1.2502262302\",\r\n    \"VMSS_5.0.3000.1.2503030945\",\r\n    \"VMSS_5.0.3000.1.2503082053\",\r\n    \"VMSS_5.0.3000.1.2503122058\",\r\n    \"VMSS_5.0.3000.1.2503212029\",\r\n    \"VMSS_5.0.3000.1.2503241442\",\r\n    \"VMSS_5.0.3000.1.2504081919\",\r\n    \"VMSS_5.1.3000.0.2409240625\",\r\n    \"VMSS_5.1.3000.0.2411031700\",\r\n    \"VMSS_5.1.3000.0.2411071700\",\r\n    \"VMSS_5.1.3000.0.2411100555\",\r\n    \"VMSS_5.1.3000.0.2411141301\",\r\n    \"VMSS_5.1.3000.0.2411260215\",\r\n    \"VMSS_5.1.3000.0.2412031700\",\r\n    \"VMSS_5.1.3000.0.2412080659\",\r\n    \"VMSS_5.1.3000.0.2412101019\",\r\n    \"VMSS_5.1.3000.0.2412120917\",\r\n    \"VMSS_5.1.3000.0.2412180316\",\r\n    \"VMSS_5.1.3000.0.2501131700\",\r\n    \"VMSS_5.1.3000.0.2501172330\",\r\n    \"VMSS_5.1.3000.0.2501280502\",\r\n    \"VMSS_5.1.3000.0.2501302312\",\r\n    \"VMSS_5.1.3000.0.2502121001\",\r\n    \"VMSS_5.1.3000.0.2502150359\",\r\n    \"VMSS_5.1.3000.0.2502181834\",\r\n    \"VMSS_5.1.3000.0.2502250356\",\r\n    \"VMSS_5.1.3000.0.2502262302\",\r\n    \"VMSS_5.1.3000.0.2503030945\",\r\n    \"VMSS_5.1.3000.0.2503082053\",\r\n    \"VMSS_5.1.3000.0.2503122058\",\r\n    \"VMSS_5.1.3000.0.2503170921\",\r\n    \"VMSS_5.1.3000.0.2503212029\",\r\n    \"VMSS_5.1.3000.0.2503241442\",\r\n    \"VMSS_5.1.3000.0.2503260109\",\r\n    \"VMSS_5.1.3000.0.2504021300\",\r\n    \"VMSS_5.1.3000.0.2504072031\",\r\n    \"VMSS_5.1.3000.0.2504081919\",\r\n    \"VMSS_5.1.3000.0.2504090147\",\r\n    \"VMSS_5.1.3000.0.2504102042\",\r\n    \"VMSS_5.1.3000.0.2504110613\",\r\n    \"VMSS_5.1.3000.0.2504170544\",\r\n    \"VMSS_5.1.3000.0.2506160526\",\r\n    \"WAIT_FOR_ONLY_NEW_VMS_IN_SCALEUP_OVERPROVISIONER\",\r\n    \"WAIT_FOR_ONLY_SPECIFIC_TIME_FOR_VM_PROVISIONING\",\r\n    \"WINDOWS_MIN_VERSION_3.3\",\r\n    \"ZOOKEEPER_HEAPSIZE_BASED_ON_SKU\"\r\n  ],\r\n  \"quota\": {\r\n    \"coresUsed\": 732,\r\n    \"maxCoresAllowed\": 3000,\r\n    \"regionalQuotas\": [\r\n      {\r\n        \"regionName\": \"East Asia\",\r\n        \"coresUsed\": 732,\r\n        \"coresAvailable\": 1000\r\n      },\r\n      {\r\n        \"regionName\": \"EAST_ASIA\",\r\n        \"coresUsed\": 0,\r\n        \"coresAvailable\": 1000\r\n      }\r\n    ]\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"versions\": {\r\n    \"paas\": {\r\n      \"available\": []\r\n    },\r\n    \"iaas\": {\r\n      \"available\": [\r\n        {\r\n          \"friendlyName\": \"4.0\",\r\n          \"displayName\": \"Version 5.0.3000.0.2504081919\",\r\n          \"isDefault\": false,\r\n          \"componentVersions\": {\r\n            \"HDP\": \"3.0\",\r\n            \"Hadoop\": \"3.1.0\",\r\n            \"HBase\": \"2.1.6\",\r\n            \"InteractiveHive\": \"3.1\",\r\n            \"Kafka\": \"2.1.1\"\r\n          }\r\n        },\r\n        {\r\n          \"friendlyName\": \"5.0\",\r\n          \"displayName\": \"Version 5.0.3000.1.2504081919\",\r\n          \"isDefault\": false,\r\n          \"componentVersions\": {\r\n            \"Spark\": \"3.1\",\r\n            \"InteractiveHive\": \"3.1\",\r\n            \"Kafka\": \"2.4.1\"\r\n          }\r\n        },\r\n        {\r\n          \"friendlyName\": \"5.1\",\r\n          \"displayName\": \"Version 5.1.3000.0.2506160526\",\r\n          \"isDefault\": false,\r\n          \"componentVersions\": {\r\n            \"Kafka\": \"3.2.0\",\r\n            \"HBase\": \"2.4.11\",\r\n            \"InteractiveHive\": \"3.1.2\",\r\n            \"Hadoop\": \"3.3.4\",\r\n            \"Spark\": \"3.3.0\"\r\n          }\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"regions\": {\r\n    \"paas\": {\r\n      \"available\": [\r\n        \"EAST ASIA\"\r\n      ]\r\n    },\r\n    \"iaas\": {\r\n      \"available\": [\r\n        \"EAST ASIA\"\r\n      ]\r\n    }\r\n  },\r\n  \"features\": [\r\n    \"ADD_ALL_NEW_HOSTS_WHEN_AMBARI_ADD_HOSTS_SUCCEEDED\",\r\n    \"ADD_NAME_RESERVATION_RECORD\",\r\n    \"ADD_RP_TO_DEDICATED_SQL_SERVER_ACL\",\r\n    \"ALLOW_CX_TO_USE_HDI_RESERVED_SERVICE_TAGS\",\r\n    \"ALLOW_GATEWAY_AUTH_BYPASS\",\r\n    \"ALLOW_IP_WHITELISTING_WITH_SERVICE_TAGS\",\r\n    \"ALLOW_RANGER_BYPASS_AUTH_IN_GATEWAY_3_6\",\r\n    \"ALLOW_RANGER_BYPASS_AUTH_IN_GATEWAY_4_0\",\r\n    \"ALLOW_RANGER_BYPASS_AUTH_IN_GATEWAY_5_0\",\r\n    \"ALLOW_RP_ACCESS_TO_CUSTOMER_SQL_DB\",\r\n    \"ALLOW_RP_ACCESS_TO_STORAGE_ACCOUNTS\",\r\n    \"ALLOW_SECURE_HADOOP_CLUSTER_TYPE_3_6\",\r\n    \"ALLOW_SECURE_HADOOP_CLUSTER_TYPE_99_200\",\r\n    \"ALLOW_SECURE_HBASE_CLUSTER_TYPE_3_6\",\r\n    \"ALLOW_SECURE_HBASE_CLUSTER_TYPE_99_200\",\r\n    \"ALLOW_SECURE_INTERACTIVEHIVE_CLUSTER_TYPE_3_6\",\r\n    \"ALLOW_SECURE_INTERACTIVEHIVE_CLUSTER_TYPE_99_200\",\r\n    \"ALLOW_SECURE_KAFKA_CLUSTER_TYPE_3_6\",\r\n    \"ALLOW_SECURE_KAFKA_CLUSTER_TYPE_99_200\",\r\n    \"ALLOW_SECURE_SPARK_CLUSTER_TYPE_3_6\",\r\n    \"ALLOW_SECURE_SPARK_CLUSTER_TYPE_99_200\",\r\n    \"ALLOW_VMSS_WITH_VNET\",\r\n    \"ALLOW_WASB_WITH_MSI\",\r\n    \"AMBARI_PARALLEL_ESP_FEATURE\",\r\n    \"AMBARI_PERF_IMPROVEMENTS_ENABLED\",\r\n    \"AMBARI_SERVER_ENABLE_DB_PURGE_FEATURE\",\r\n    \"AMBARI_SERVER_OVERRIDE_MAX_HEAP_SIZE\",\r\n    \"ASSOCIATE_DEDICATED_SQL_SERVER_WITH_NSP\",\r\n    \"AUTOSCALE_INTERACTIVEHIVE_SECURE_5_0\",\r\n    \"AUX_IAAS_FUNCTIONALITIES\",\r\n    \"AVAILABILITY_ZONES\",\r\n    \"AZSECPACK_CODE_INTEGRITY_ENFORCE\",\r\n    \"BLOCK_GATEWAY_5986_PORT\",\r\n    \"CHECK_ABORTED_HOST_COUNT_FOR_ADDING_HOSTS\",\r\n    \"CHECK_OPERATIONAL_HOSTS_BEFORE_ROLLBACK\",\r\n    \"CHECK_VHD_AVAILABILITY_IN_STORAGE_ACCOUNT\",\r\n    \"CLUSTER_RESIZE\",\r\n    \"CLUSTER_WITH_MANAGED_DISK_AZ_SUPPORT\",\r\n    \"CLUSTERS_CONTRACT_1\",\r\n    \"CLUSTERS_CONTRACT_1_SDK\",\r\n    \"CLUSTERS_CONTRACT_2_SDK\",\r\n    \"CLUSTERS_CONTRACT_VERSION_3_SDK\",\r\n    \"COLLECTANONYMIZEDLOGS\",\r\n    \"CONTAINER_LOG_COLLECTOR\",\r\n    \"CONTAINER_RESOURCE_V3\",\r\n    \"CUSTOM_ACTIONS_V2\",\r\n    \"DATALAKE\",\r\n    \"DATALAKE_3_2\",\r\n    \"DATALAKE_3_4\",\r\n    \"DATALAKE_3_5\",\r\n    \"DATALAKE_3_6\",\r\n    \"DATALAKE_4_0\",\r\n    \"DATALAKE_5_0\",\r\n    \"DATALAKE_5_1\",\r\n    \"DATALAKE_6_0\",\r\n    \"DATALAKE_99_200\",\r\n    \"DATALAKE_99_201\",\r\n    \"DATALAKE_DEFAULTFS_3_5\",\r\n    \"DATALAKE_DEFAULTFS_3_6\",\r\n    \"DATALAKE_DEFAULTFS_4_0\",\r\n    \"DATALAKE_DEFAULTFS_5_0\",\r\n    \"DATALAKE_DEFAULTFS_5_1\",\r\n    \"DATALAKE_DEFAULTFS_6_0\",\r\n    \"DATALAKE_DEFAULTFS_99_200\",\r\n    \"DATALAKE_DEFAULTFS_99_201\",\r\n    \"DEALLOCATE_SUSPENDED_SUBSCRIPTION\",\r\n    \"DEFAULT_CONTAINER_IDENTIFIER_AND_STORAGEFQDN_ALREADY_USED\",\r\n    \"DENY_DEDICATED_STORAGE_PUBLIC_ACCESS\",\r\n    \"DISABLE_COMMERCE_API_BILLING\",\r\n    \"DISABLE_DATABASE_CONNECTION_STRING_ENCRYPT\",\r\n    \"DISTRO\",\r\n    \"DISTRO_3_6\",\r\n    \"DISTRO_4_0\",\r\n    \"DISTRO_5_0\",\r\n    \"DISTRO_5_1\",\r\n    \"DISTRO_6_0\",\r\n    \"DOCUMENT_VALIDATION_IN_API\",\r\n    \"DOCUMENT_VALIDATION_IN_API_FOR_PUT\",\r\n    \"ENABLE_ABFS_ENDPOINT\",\r\n    \"ENABLE_ARM_ENDPOINT_FROM_REQUEST_REFERER\",\r\n    \"ENABLE_ARMTEMPLATE_DELEGATION_SAS_IN_CLUSTER\",\r\n    \"ENABLE_ASSOCIATE_DEDICATED_PROVISIONING_STORAGE_WITH_NSP\",\r\n    \"ENABLE_AUTOSCALE_INTERACTIVEHIVE\",\r\n    \"ENABLE_AUTOSCALE_SPARK_3_0\",\r\n    \"ENABLE_AUTOSCALE_SPARK_3_1\",\r\n    \"ENABLE_AUTOSCALE_V2\",\r\n    \"ENABLE_AUTOSCALE_V2_QUEUE_MSI_ACCESS\",\r\n    \"ENABLE_AUTOSCALE_V2_WHEN_UPDATE_CONFIGURATION\",\r\n    \"ENABLE_AZURE_MONITOR_AGENT\",\r\n    \"ENABLE_BYO_DATABASE_MSI_IN_CLUSTER\",\r\n    \"ENABLE_CERTIFICATE_MANAGER_FOR_KAFKAHIB\",\r\n    \"ENABLE_CERTIFICATE_MANAGER_FOR_TLSWILDCARD\",\r\n    \"ENABLE_CLUSTER_MONITORING_ENDPOINT\",\r\n    \"ENABLE_COMPUTE_ISOLATION\",\r\n    \"ENABLE_CUSTOM_SCALE_SCRIPT_TIMEOUT\",\r\n    \"ENABLE_DEDICATED_SQL_ASSOCIATION_WITH_NSP_ENFORCED_MODE\",\r\n    \"ENABLE_DEFAULT_SECURITY_GROUP\",\r\n    \"ENABLE_DNS_CLEANUP_FOR_SECURE_CLUSTERS\",\r\n    \"ENABLE_ENCRYPTIONCERT_CERTIFICATE_RENEWER\",\r\n    \"ENABLE_ENTRA_USER_AUTH_IN_NONESP\",\r\n    \"ENABLE_EVENTHUB_API_BILLING\",\r\n    \"ENABLE_FORCE_OU_CONTAINER_DELETION\",\r\n    \"ENABLE_GATEWAY_SPECIALIZED_FD_AWARE_OVERPROVIONER\",\r\n    \"ENABLE_GCS\",\r\n    \"ENABLE_GENEVA_LOG_ANALYTICS_MONITORING\",\r\n    \"ENABLE_HDINSIGHT_DATA_DISKS_VALIDATOR\",\r\n    \"ENABLE_HOBO_DATABASE_MSI_IN_CLUSTER\",\r\n    \"ENABLE_IPSEC_BYDEFAULT_FOR_PORTAL\",\r\n    \"ENABLE_IPSECCERT_CERTIFICATE_RENEWER\",\r\n    \"ENABLE_KERBEROS_TICKET_SIZE\",\r\n    \"ENABLE_MDSDGCSCERTIFICATE_CERTIFICATE_RENEWER\",\r\n    \"ENABLE_MICROSOFT_GRAPH\",\r\n    \"ENABLE_MIN_SUPPORTED_TLS_VERSION_POLICY_FOR_GATEWAY\",\r\n    \"ENABLE_MONITORING_AGENT_SERVICE\",\r\n    \"ENABLE_MSI_CLIENT_V2\",\r\n    \"ENABLE_OVERRIDE_DEFAULT_CONFIGURATION\",\r\n    \"ENABLE_PERSIST_KDC_ADMIN_CREDENTIALS\",\r\n    \"ENABLE_PROVISIONING_STORAGE_MSI_IN_CLUSTER\",\r\n    \"ENABLE_PUBLIC_IP_TAG\",\r\n    \"ENABLE_PUBLIC_IP_VIRTUAL_TAG\",\r\n    \"ENABLE_RANGER_GROUP_SEARCH\",\r\n    \"ENABLE_REMOVE_STALE_SIGNING_CERT\",\r\n    \"ENABLE_RUBIX_IOCACHE_IN_BLUEPRINT\",\r\n    \"ENABLE_RUBIX_IOCACHE_IN_BLUEPRINT_FOR_WILDFIRE\",\r\n    \"ENABLE_RUN_SCRIPTS_AFTER_CERT_ROTATION\",\r\n    \"ENABLE_SECURE_TLS_GATEWAY_SETTINGS\",\r\n    \"ENABLE_STANDARD_IP_AND_LOAD_BALANCER\",\r\n    \"ENABLE_STOP_CLUSTER_MSI_IDENTITY_URL_UPDATE\",\r\n    \"ENABLE_TLSWILDCARD_CERTIFICATE_RENEWER\",\r\n    \"ENABLE_UPGRADE_VMSIZE_TO_V2\",\r\n    \"ENABLE_USING_CLUSTER_DEDICATED_PROVISIONING_STORAGE\",\r\n    \"ENABLE_YARN_EXCLUDE_FILE_XML_FORMAT\",\r\n    \"ENABLEDATALAKE\",\r\n    \"ENABLEGENEVAANALYTICS\",\r\n    \"ENFORCE_VNET_ACCESS_VALIDATE\",\r\n    \"FORCE_DELETE_AMBARI_HOSTS\",\r\n    \"FORCE_DELETE_VIRTUAL_MACHINE\",\r\n    \"GATEWAY_NODE_CODEINTEGRITY_PATCH_ALLVERSION\",\r\n    \"GATEWAY_NODE_PATCH_CODEINTEGRITY\",\r\n    \"GATEWAY_NODE_PATCH_CODEINTEGRITY_SKIP_ERROR\",\r\n    \"GATEWAY_NODE_PATCH_PATCHED_IMAGER\",\r\n    \"HADOOP_334_FOR_HDI_5_1_ENABLED\",\r\n    \"HADOOP_VIRTUAL_NETWORK_ENABLED\",\r\n    \"HBASE_2_4\",\r\n    \"HBASE_2411_FOR_HDI_5_1_ENABLED\",\r\n    \"HBASE_DATALAKE_DEFAULTFS_3_6\",\r\n    \"HDI_3_3_SPARK\",\r\n    \"HDP_2_6_3_ENABLED\",\r\n    \"HDP_2_6_3_PORTAL_ENABLED\",\r\n    \"HDP_2_6_5_ENABLED\",\r\n    \"HDP_2_6_5_PORTAL_ENABLED\",\r\n    \"HDP_2_6_7_ENABLED\",\r\n    \"HDP_2_6_7_PORTAL_ENABLED\",\r\n    \"HDP_3_0_ENABLED\",\r\n    \"HDP_3_0_PORTAL_ENABLED\",\r\n    \"HDP_3_1_ENABLED\",\r\n    \"HDP_3_1_PORTAL_ENABLED\",\r\n    \"HIGH_AVAILABILITY\",\r\n    \"HIVE_310_FOR_HDI_5_0_ENABLED\",\r\n    \"HIVE_312_FOR_HDI_5_1_ENABLED\",\r\n    \"HS2_ZK_ROUTER_HADOOP\",\r\n    \"HS2_ZK_ROUTER_SPARK\",\r\n    \"IAAS_ALLOW_CUSTOM_DNS\",\r\n    \"IAAS_AMBARI_APP_TIMELINE_SERVER_HA_SERVICE\",\r\n    \"IAAS_AMBARI_COMPONENT_INSTALL_RECOVERY\",\r\n    \"IAAS_AMBARI_DEPENDENCY_BASED_DEPLOYMENT\",\r\n    \"IAAS_AMBARI_HA_SERVICES\",\r\n    \"IAAS_AMBARI_HISTORYSERVER_HA_SERVICE\",\r\n    \"IAAS_AMBARI_JUPYTER_HA_SERVICE\",\r\n    \"IAAS_AMBARI_LIVY_HA_SERVICE_3_6\",\r\n    \"IAAS_AMBARI_LIVY_HA_SERVICE_4_0\",\r\n    \"IAAS_AMBARI_LIVY_HA_SERVICE_5_0\",\r\n    \"IAAS_AMBARI_LIVY_HA_SERVICE_5_1\",\r\n    \"IAAS_AMBARI_LIVY_HA_SERVICE_99_201\",\r\n    \"IAAS_AMBARI_LOWER_LATENCY\",\r\n    \"IAAS_AMBARI_SKIP_COMPONENTS_INSTALL\",\r\n    \"IAAS_ARM_PROVISIONING\",\r\n    \"IAAS_CLEANUP_PHYSICAL_RESOURCES_ON_FAILED_CLUSTER_CREATE\",\r\n    \"IAAS_CLOSE_HEAD_HTTPS_END_POINT_AFTER_CLUSTER_CREATE\",\r\n    \"IAAS_CLUSTER_APPLICATION_ALLOW_MULTIPLE_ROLE_INSTANCES\",\r\n    \"IAAS_CLUSTER_APPLICATION_REMOVE\",\r\n    \"IAAS_CLUSTER_CONTAINER_PREUPLOAD_SUBMIT_WAIT\",\r\n    \"IAAS_CLUSTER_GATEWAY_MONITORING\",\r\n    \"IAAS_CLUSTER_MONITORING\",\r\n    \"IAAS_CLUSTER_RSERVER\",\r\n    \"IAAS_CLUSTER_STORAGE_MSI_VALIDATION_ENABLED\",\r\n    \"IAAS_DB_CREATION_IN_PARALLEL_TO_VM\",\r\n    \"IAAS_DELETE_LEAKED_RESOURCES\",\r\n    \"IAAS_DELETE_TEMPLATE_DEPLOYMENTS\",\r\n    \"IAAS_DEPLOYMENTS\",\r\n    \"IAAS_DO_NOT_CREATE_WASB_TABLES_IN_CUSTOMER_STORAGE\",\r\n    \"IAAS_ENABLE_ADLS_SECURE_OAUTH_TOKEN_REGISTRATION_FLOW\",\r\n    \"IAAS_ENABLE_AUTOSCALE\",\r\n    \"IAAS_ENABLE_BLOBCOPY\",\r\n    \"IAAS_ENABLE_CLUSTER_CONFIG_OVERRIDES\",\r\n    \"IAAS_ENABLE_CLUSTER_SIDE_VALIDATION\",\r\n    \"IAAS_ENABLE_DATABASE_COMPONENT_PIECEWISE_STARTUP\",\r\n    \"IAAS_ENABLE_DISK_ENCRYPTION\",\r\n    \"IAAS_ENABLE_ENCRYPTION_AT_HOST\",\r\n    \"IAAS_ENABLE_GATEWAY_AGENT_6\",\r\n    \"IAAS_ENABLE_GATEWAY_MISE\",\r\n    \"IAAS_ENABLE_INTERNAL_ENDPOINT\",\r\n    \"IAAS_ENABLE_IPSEC\",\r\n    \"IAAS_ENABLE_IPSEC_FOR_GATEWAY\",\r\n    \"IAAS_ENABLE_MSI\",\r\n    \"IAAS_ENABLE_OFFLINE_CLEANUP\",\r\n    \"IAAS_ENABLE_OFFLINE_CLEANUP_FOR_DELETING_VMS\",\r\n    \"IAAS_GET_DELETE_ERROR_CLUSTERS\",\r\n    \"IAAS_HDINSIGHT_HDFS_LOW_SAFEMODE_THRESHOLD\",\r\n    \"IAAS_HDINSIGHT_HDFS_SINGLE_REPLICA\",\r\n    \"IAAS_INCLUDE_STORAGE_IN_SUBSCRIPTION_SELECTION\",\r\n    \"IAAS_LAZY_PROVISIONING\",\r\n    \"IAAS_MOVE_OPERATIONAL_CLUSTER_TO_RUNNING\",\r\n    \"IAAS_PARALLEL_DB_CREATE\",\r\n    \"IAAS_PREPROVISION_METASTORES_SCHEMAS\",\r\n    \"IAAS_REDUCE_PAYLOAD_STORAGEACCOUNTS_FROM_METADATA\",\r\n    \"IAAS_RESTART_ID_BROKER_FOR_IPSEC_CERT_ROTATION\",\r\n    \"IAAS_SCRIPTACTIONS_DELETE_VMS_CRUD_FAILURES\",\r\n    \"IAAS_SCRIPTACTIONS_RUNNING\",\r\n    \"IAAS_SHORT_VM_NAME\",\r\n    \"IAAS_SHORT_VM_NAME_DEPLYOMENT_ID\",\r\n    \"IAAS_SUBMIT_AMBARI_REQUEST_ONCE_LINUX_VM_ARE_AVAILABLE\",\r\n    \"IAAS_TEZ_ATS_V15\",\r\n    \"IAAS_USE_NEW_FAST_BLOB_COPIER\",\r\n    \"IAAS_USE_UNATTENDED_UPGRADES_FOR_PATCHING\",\r\n    \"IAAS_VALIDATE_CUSTOM_VNET\",\r\n    \"IAAS_VALIDATE_NETWORK_FOR_SCALE_REQUEST\",\r\n    \"IAAS_VALIDATE_NSG\",\r\n    \"IAAS_VALIDATE_PROVISIONING_AGENT_STATE_FOR_IPSEC_CERT_ROTATION\",\r\n    \"IAAS_WAIT_FOR_CLOSING_HEAD_HTTPS_END_POINT_AFTER_CLUSTER_CREATE\",\r\n    \"IAAS_YARN_HDINSIGHT_HYBRID_TIMELINE_STORE\",\r\n    \"IAAS_YARN_HDINSIGHT_SQL_TIMELINE_STORE\",\r\n    \"IAAS_YARN_HDINSIGHT_TIMELINE_STORE\",\r\n    \"IDENTITY_BROKER\",\r\n    \"IGNORE_CUSTOM_METASTORE_FIREWALL_ERROR\",\r\n    \"IGNORE_FD_AND_UD_IN_OVER_PROVISIONER_FOR_WORKERNODES\",\r\n    \"IMAGE_1804\",\r\n    \"IMPORT_ENCRYPTION_CERT_AS_CERTIFICATE\",\r\n    \"INTERACTIVEHIVE\",\r\n    \"INTERACTIVEHIVE_3_6\",\r\n    \"INTERACTIVEHIVE_4_0\",\r\n    \"INTERACTIVEHIVE_5_0\",\r\n    \"INTERACTIVEHIVE_5_1\",\r\n    \"INTERACTIVEHIVE_99_200\",\r\n    \"INTERACTIVEHIVE_ADLS\",\r\n    \"INTERACTIVEHIVE_SCALING_ENABLED\",\r\n    \"KAFKA\",\r\n    \"KAFKA_2_4\",\r\n    \"KAFKA_241_FOR_HDI_5_0_ENABLED\",\r\n    \"KAFKA_3_2\",\r\n    \"KAFKA_3_5\",\r\n    \"KAFKA_3_6\",\r\n    \"KAFKA_320_FOR_HDI_5_1_ENABLED\",\r\n    \"KAFKA_4_0\",\r\n    \"KAFKA_5_0\",\r\n    \"KAFKA_5_1\",\r\n    \"KAFKA_6_0\",\r\n    \"KAFKA_EXCLUDE_NON_KAFKA_COMPONENTS\",\r\n    \"KAFKA_VNET_REQUIREMENT_OVERRIDE\",\r\n    \"KAFKA_WITHOUT_DATA_DISKS_OVERRIDE\",\r\n    \"KAFKAREST\",\r\n    \"KAFKAREST_HARDWAREOVERRIDE\",\r\n    \"LDAP_CERTIFICATE_RENEWAL\",\r\n    \"LINUX_MIN_VERSION_3.3\",\r\n    \"LINUX_NODE_PATCH\",\r\n    \"MANAGED_DISKS\",\r\n    \"MANAGED_DISKS_CRP_FD_REQUIREMENT_OVERRIDE\",\r\n    \"MANAGED_DISKS_HBASE\",\r\n    \"MANAGED_DISKS_SPARK_HADOOP\",\r\n    \"MD_HBASE_OPT_SCALEDOWN\",\r\n    \"MD_HBASE_SCALEDOWN_DEADNODE_FAILFAST\",\r\n    \"MDSCENTRALLOGGING\",\r\n    \"MLSERVICES_CLUSTERTYPE_3_6_ENABLED\",\r\n    \"MODIFY_AMBARI_HOST_OPERATIONAL\",\r\n    \"NETWORK_PROPERTIES\",\r\n    \"NODE_SETUP_POLLER_ENABLED\",\r\n    \"NOT_IMPORT_SSH_PUBLIC_KEY_AS_CERTIFICATE\",\r\n    \"ONLY_CHECK_NEW_ADDED_HOSTS_ARE_OPERATIONAL\",\r\n    \"OPTIMIZE_POST_SCALEUP_CUSTOMACTION\",\r\n    \"OVERPROVISION_HOSTGROUP_edgenode\",\r\n    \"OVERPROVISION_HOSTGROUP_Gateway\",\r\n    \"OVERPROVISION_HOSTGROUP_IDBROKERNODE\",\r\n    \"OVERPROVISION_HOSTGROUP_Workernode\",\r\n    \"OVERPROVISION_HOSTGROUP_zookeepernode\",\r\n    \"PERF_OPTIMIZED_RESOURCE_LOCATION_FETCH\",\r\n    \"PORTALAPPINSTALL\",\r\n    \"POWERSHELL_SCRIPT_ACTION\",\r\n    \"POWERSHELL_SCRIPT_ACTION_SDK\",\r\n    \"PREMIUM_TIER_PREVIEW\",\r\n    \"PRIVATE_LINK_CONFIGURATIONS\",\r\n    \"PROVISION_AZURE_RESOURCES_USING_SDKS\",\r\n    \"PROVISION_AZURE_RESOURCES_USING_SDKS_ONLY_WITH_VMSS\",\r\n    \"PROVISION_NETWORK_RESOURCES_IN_CLUSTER_RG\",\r\n    \"PROVISION_VIRTUALMACHINESCALESET\",\r\n    \"PROVISIONING_AGENT\",\r\n    \"QUERY_BLUEPRINT_FROM_AMBARI\",\r\n    \"QUEUE_TO_SERVICEFABRIC_RP\",\r\n    \"RACKAWARENESS_KAFKA\",\r\n    \"RANDOM_JDK_TRUSTSTORE_PASSWORD\",\r\n    \"RELAY_CONNECTION\",\r\n    \"RETRY_STOP_HOST_COMPONENTS\",\r\n    \"RMHA\",\r\n    \"ROUTE_TO_SERVICEFABRIC_API\",\r\n    \"RSERVER_CLUSTERTYPE_3_5_ENABLED\",\r\n    \"RSERVER_CLUSTERTYPE_3_6_ENABLED\",\r\n    \"RSERVER_CLUSTERTYPE_ENABLED\",\r\n    \"SCALING_QUOTA_VALIDATION\",\r\n    \"SECURE_HADOOP\",\r\n    \"SECURE_HADOOP_4_0\",\r\n    \"SECURE_HADOOP_5_0\",\r\n    \"SECURE_HADOOP_5_1\",\r\n    \"SECURE_HADOOP_DATALAKE_DEFAULTFS_3_5\",\r\n    \"SECURE_HADOOP_DATALAKE_DEFAULTFS_3_6\",\r\n    \"SECURE_HADOOP_DATALAKE_DEFAULTFS_99_200\",\r\n    \"SECURE_HADOOP_UI\",\r\n    \"SECURE_SPARK_SQL_WITH_FINE_GRAIN_CONTROL_ON_SPARK_CORE\",\r\n    \"SECURE_SPARK_USE_ADDITIONAL_STORAGE_WORKAROUND\",\r\n    \"SECURE_ZEPPELIN_KERBERIZED\",\r\n    \"SET_TLS_12_PLUS_AS_DEFAULT_FOR_GATEWAY\",\r\n    \"SHARED_IMAGE_GALLERY\",\r\n    \"SHARED_IMAGE_GALLERY_WITH_VM\",\r\n    \"SHOW_HUMBOLDT_GA\",\r\n    \"SHOW_IBIZA_CREATE\",\r\n    \"SKIP_DECOMNODEMANAGER_IF_AUTOSCALE\",\r\n    \"SKIP_LINUX_VM_RESTART_FOR_GCS_CERT_ROTATION\",\r\n    \"SKIP_RESOURCE_DELETION_ON_ERROR\",\r\n    \"SKIP_RESTART_MASTERSERVICES_ON_SCALE\",\r\n    \"SKIP_SCRIPT_VALIDATION\",\r\n    \"SPARK_2_1\",\r\n    \"SPARK_2_2\",\r\n    \"SPARK_3_0\",\r\n    \"SPARK_3_1\",\r\n    \"SPARK_312_FOR_HDI_5_0_ENABLED\",\r\n    \"SPARK_330_FOR_HDI_5_1_ENABLED\",\r\n    \"SPARK_EXPERIMENTAL\",\r\n    \"STORAGE_ACCOUNT_ENDPOINT_VALIDATION\",\r\n    \"STORM_PREVIEW\",\r\n    \"UI_CREATE_WIZARD_V2\",\r\n    \"USE_AGGRESSIVE_POLLING_FOR_SDK_PROVISIONING\",\r\n    \"USE_ENCRYPTION_CERT_FROM_KEYVAULT\",\r\n    \"USE_PARALLEL_VALIDATION_TASK_EXECUTION_STRATEGY\",\r\n    \"USE_PER_CLUSTER_TLS_CERT\",\r\n    \"USE_SIGNING_CERT_FROM_KEYVAULT\",\r\n    \"VIRTUAL_NETWORK_ENABLED\",\r\n    \"VM_FAMILY_QUOTA_USAGES\",\r\n    \"VM_FAMILY_QUOTA_VALIDATION\",\r\n    \"VMSIZES_AUX\",\r\n    \"VMSS_3.6.1000.67.2009101914\",\r\n    \"VMSS_4.0.2000.1.2009101914\",\r\n    \"VMSS_4.0.3000.1.2409240625\",\r\n    \"VMSS_4.0.3000.1.2411031700\",\r\n    \"VMSS_4.0.3000.1.2411071700\",\r\n    \"VMSS_4.0.3000.1.2411100555\",\r\n    \"VMSS_4.0.3000.1.2411260215\",\r\n    \"VMSS_4.0.3000.1.2412031700\",\r\n    \"VMSS_4.0.3000.1.2412080659\",\r\n    \"VMSS_4.0.3000.1.2412101019\",\r\n    \"VMSS_4.0.3000.1.2412120917\",\r\n    \"VMSS_4.0.3000.1.2412180316\",\r\n    \"VMSS_4.0.3000.1.2501131700\",\r\n    \"VMSS_4.0.3000.1.2501172330\",\r\n    \"VMSS_4.0.3000.1.2501280502\",\r\n    \"VMSS_4.0.3000.1.2501302312\",\r\n    \"VMSS_4.0.3000.1.2502121001\",\r\n    \"VMSS_4.0.3000.1.2502150359\",\r\n    \"VMSS_4.0.3000.1.2502181834\",\r\n    \"VMSS_4.0.3000.1.2502250356\",\r\n    \"VMSS_4.0.3000.1.2502262302\",\r\n    \"VMSS_4.0.3000.1.2503030945\",\r\n    \"VMSS_4.0.3000.1.2503082053\",\r\n    \"VMSS_4.0.3000.1.2503122058\",\r\n    \"VMSS_4.0.3000.1.2503212029\",\r\n    \"VMSS_4.0.3000.1.2503241442\",\r\n    \"VMSS_4.0.3000.1.2504081919\",\r\n    \"VMSS_5.0.3000.0.2310140099\",\r\n    \"VMSS_5.0.3000.0.2409240625\",\r\n    \"VMSS_5.0.3000.0.2411031700\",\r\n    \"VMSS_5.0.3000.0.2411071700\",\r\n    \"VMSS_5.0.3000.0.2411100555\",\r\n    \"VMSS_5.0.3000.0.2411141301\",\r\n    \"VMSS_5.0.3000.0.2411260215\",\r\n    \"VMSS_5.0.3000.0.2412031700\",\r\n    \"VMSS_5.0.3000.0.2412080659\",\r\n    \"VMSS_5.0.3000.0.2412101019\",\r\n    \"VMSS_5.0.3000.0.2412120917\",\r\n    \"VMSS_5.0.3000.0.2412180316\",\r\n    \"VMSS_5.0.3000.0.2501131700\",\r\n    \"VMSS_5.0.3000.0.2501172330\",\r\n    \"VMSS_5.0.3000.0.2501280502\",\r\n    \"VMSS_5.0.3000.0.2501302312\",\r\n    \"VMSS_5.0.3000.0.2502121001\",\r\n    \"VMSS_5.0.3000.0.2502150359\",\r\n    \"VMSS_5.0.3000.0.2502181834\",\r\n    \"VMSS_5.0.3000.0.2502250356\",\r\n    \"VMSS_5.0.3000.0.2502262302\",\r\n    \"VMSS_5.0.3000.0.2503030945\",\r\n    \"VMSS_5.0.3000.0.2503082053\",\r\n    \"VMSS_5.0.3000.0.2503122058\",\r\n    \"VMSS_5.0.3000.0.2503212029\",\r\n    \"VMSS_5.0.3000.0.2503241442\",\r\n    \"VMSS_5.0.3000.0.2504081919\",\r\n    \"VMSS_5.0.3000.1.2310140099\",\r\n    \"VMSS_5.0.3000.1.2409240625\",\r\n    \"VMSS_5.0.3000.1.2411031700\",\r\n    \"VMSS_5.0.3000.1.2411071700\",\r\n    \"VMSS_5.0.3000.1.2411100555\",\r\n    \"VMSS_5.0.3000.1.2411141301\",\r\n    \"VMSS_5.0.3000.1.2411260215\",\r\n    \"VMSS_5.0.3000.1.2412031700\",\r\n    \"VMSS_5.0.3000.1.2412080659\",\r\n    \"VMSS_5.0.3000.1.2412101019\",\r\n    \"VMSS_5.0.3000.1.2412120917\",\r\n    \"VMSS_5.0.3000.1.2412180316\",\r\n    \"VMSS_5.0.3000.1.2501131700\",\r\n    \"VMSS_5.0.3000.1.2501172330\",\r\n    \"VMSS_5.0.3000.1.2501280502\",\r\n    \"VMSS_5.0.3000.1.2501302312\",\r\n    \"VMSS_5.0.3000.1.2502121001\",\r\n    \"VMSS_5.0.3000.1.2502150359\",\r\n    \"VMSS_5.0.3000.1.2502181834\",\r\n    \"VMSS_5.0.3000.1.2502250356\",\r\n    \"VMSS_5.0.3000.1.2502262302\",\r\n    \"VMSS_5.0.3000.1.2503030945\",\r\n    \"VMSS_5.0.3000.1.2503082053\",\r\n    \"VMSS_5.0.3000.1.2503122058\",\r\n    \"VMSS_5.0.3000.1.2503212029\",\r\n    \"VMSS_5.0.3000.1.2503241442\",\r\n    \"VMSS_5.0.3000.1.2504081919\",\r\n    \"VMSS_5.1.3000.0.2409240625\",\r\n    \"VMSS_5.1.3000.0.2411031700\",\r\n    \"VMSS_5.1.3000.0.2411071700\",\r\n    \"VMSS_5.1.3000.0.2411100555\",\r\n    \"VMSS_5.1.3000.0.2411141301\",\r\n    \"VMSS_5.1.3000.0.2411260215\",\r\n    \"VMSS_5.1.3000.0.2412031700\",\r\n    \"VMSS_5.1.3000.0.2412080659\",\r\n    \"VMSS_5.1.3000.0.2412101019\",\r\n    \"VMSS_5.1.3000.0.2412120917\",\r\n    \"VMSS_5.1.3000.0.2412180316\",\r\n    \"VMSS_5.1.3000.0.2501131700\",\r\n    \"VMSS_5.1.3000.0.2501172330\",\r\n    \"VMSS_5.1.3000.0.2501280502\",\r\n    \"VMSS_5.1.3000.0.2501302312\",\r\n    \"VMSS_5.1.3000.0.2502121001\",\r\n    \"VMSS_5.1.3000.0.2502150359\",\r\n    \"VMSS_5.1.3000.0.2502181834\",\r\n    \"VMSS_5.1.3000.0.2502250356\",\r\n    \"VMSS_5.1.3000.0.2502262302\",\r\n    \"VMSS_5.1.3000.0.2503030945\",\r\n    \"VMSS_5.1.3000.0.2503082053\",\r\n    \"VMSS_5.1.3000.0.2503122058\",\r\n    \"VMSS_5.1.3000.0.2503170921\",\r\n    \"VMSS_5.1.3000.0.2503212029\",\r\n    \"VMSS_5.1.3000.0.2503241442\",\r\n    \"VMSS_5.1.3000.0.2503260109\",\r\n    \"VMSS_5.1.3000.0.2504021300\",\r\n    \"VMSS_5.1.3000.0.2504072031\",\r\n    \"VMSS_5.1.3000.0.2504081919\",\r\n    \"VMSS_5.1.3000.0.2504090147\",\r\n    \"VMSS_5.1.3000.0.2504102042\",\r\n    \"VMSS_5.1.3000.0.2504110613\",\r\n    \"VMSS_5.1.3000.0.2504170544\",\r\n    \"VMSS_5.1.3000.0.2506160526\",\r\n    \"WAIT_FOR_ONLY_NEW_VMS_IN_SCALEUP_OVERPROVISIONER\",\r\n    \"WAIT_FOR_ONLY_SPECIFIC_TIME_FOR_VM_PROVISIONING\",\r\n    \"WINDOWS_MIN_VERSION_3.3\",\r\n    \"ZOOKEEPER_HEAPSIZE_BASED_ON_SKU\"\r\n  ],\r\n  \"quota\": {\r\n    \"coresUsed\": 464,\r\n    \"maxCoresAllowed\": 3000,\r\n    \"regionalQuotas\": [\r\n      {\r\n        \"regionName\": \"East Asia\",\r\n        \"coresUsed\": 464,\r\n        \"coresAvailable\": 1000\r\n      },\r\n      {\r\n        \"regionName\": \"EAST_ASIA\",\r\n        \"coresUsed\": 0,\r\n        \"coresAvailable\": 1000\r\n      }\r\n    ]\r\n  }\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.HDInsight/locations/East%20Asia/billingSpecs?api-version=2025-01-15-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwL3Byb3ZpZGVycy9NaWNyb3NvZnQuSERJbnNpZ2h0L2xvY2F0aW9ucy9FYXN0JTIwQXNpYS9iaWxsaW5nU3BlY3M/YXBpLXZlcnNpb249MjAyNS0wMS0xNS1wcmV2aWV3",
+      "RequestUri": "/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/providers/Microsoft.HDInsight/locations/East%20Asia/billingSpecs?api-version=2025-01-15-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOTY0YzEwYmItOGE2Yy00M2JjLTgzZDMtNmIzMThjNmM3MzA1L3Byb3ZpZGVycy9NaWNyb3NvZnQuSERJbnNpZ2h0L2xvY2F0aW9ucy9FYXN0JTIwQXNpYS9iaWxsaW5nU3BlY3M/YXBpLXZlcnNpb249MjAyNS0wMS0xNS1wcmV2aWV3",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept-Language": [
           "en-US"
         ],
         "x-ms-client-request-id": [
-          "e3f4e57e-815c-4f69-9752-cea3b4a6872f"
+          "e515acb0-2515-4ff2-80d8-dc603eb698c9"
         ],
         "User-Agent": [
-          "FxVersion/8.0.1825.31117",
+          "FxVersion/8.0.2125.47513",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.26100",
-          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.3.1"
+          "OSVersion/Microsoft.Windows.10.0.26200",
+          "Microsoft.Azure.Management.HDInsight.HDInsightManagementClient/6.4.0"
         ]
       },
       "RequestBody": "",
@@ -534,25 +513,28 @@
           "no-cache"
         ],
         "x-ms-request-id": [
-          "66815c73-62a8-4805-a385-07bb8760f72f"
+          "e3306799-88f9-4d0c-a558-a47761b0e79d"
         ],
         "x-ms-hdi-served-by": [
           "eastasia"
         ],
         "x-ms-correlation-request-id": [
-          "e04ef0cf-bd51-46df-9eaa-88f19b3f5eec"
+          "0cdb8a32-f2ec-4fb3-8e3d-b842ab0663c7"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
         ],
         "x-ms-operation-identifier": [
-          "tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47,objectId=9cd85b81-c262-44da-bc33-96c3b8c182d3/japaneast/653ab480-583e-4f07-8c92-6c6d9abb885a"
+          "tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47,objectId=9cd85b81-c262-44da-bc33-96c3b8c182d3/southeastasia/4db580b2-4fe4-40b2-8842-e442af27093d"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
-          "1099"
+          "1100"
         ],
         "x-ms-ratelimit-remaining-subscription-global-reads": [
-          "16499"
+          "16500"
         ],
         "x-ms-routing-request-id": [
-          "JAPANEAST:20250804T020829Z:e04ef0cf-bd51-46df-9eaa-88f19b3f5eec"
+          "SOUTHEASTASIA:20251028T074523Z:0cdb8a32-f2ec-4fb3-8e3d-b842ab0663c7"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -560,14 +542,8 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
-        "X-Cache": [
-          "CONFIG_NOCACHE"
-        ],
-        "X-MSEdge-Ref": [
-          "Ref A: F9E5E95BAE8B4C83A6CE45E6BF761B9C Ref B: TYO01EDGE1020 Ref C: 2025-08-04T02:08:28Z"
-        ],
         "Date": [
-          "Mon, 04 Aug 2025 02:08:29 GMT"
+          "Tue, 28 Oct 2025 07:45:23 GMT"
         ],
         "Content-Length": [
           "94858"
@@ -607,19 +583,19 @@
           "131"
         ]
       },
-      "RequestBody": "execute=select%20count%28%2A%29%20from%20default.hivesampletable&statusdir=2025-08-04T02-08-29-0740ce7d-45c8-478f-8c53-b84ae224f6d1",
+      "RequestBody": "execute=select%20count%28%2A%29%20from%20default.hivesampletable&statusdir=2025-10-28T07-45-23-03f22fc3-3aba-438b-a489-dfeb3a92a0c5",
       "ResponseHeaders": {
         "request-id": [
-          "0c83123c069e49bead1f953585bbfd4e"
+          "ec867694026e4266bc059e2f1ce2e91e"
         ],
         "x-ms-hdi-active": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net"
         ],
         "x-ms-hdi-http-host": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:30111"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:30111"
         ],
         "x-ms-hdi-http-gateway": [
-          "gw1-b38c3d"
+          "gw3-3780cb"
         ],
         "X-Frame-Options": [
           "DENY"
@@ -628,13 +604,13 @@
           "max-age=31536000; includeSubDomains"
         ],
         "Set-Cookie": [
-          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1754309310970&s=2sFxEaB9HKtS08UzGNk5baYSrvHIPYYveD3hmbhODSE=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
+          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1761673527476&s=GnXnEG1IqCe7e0fQIZR1GN7rlVeAHcuEt3fHs9EcyCY=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
         ],
         "Content-Security-Policy": [
           "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self'; img-src 'self' *.blob.core.windows.net secure.gravatar.com extjs.com grafanarel.s3.amazonaws.com data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;"
         ],
         "Date": [
-          "Mon, 04 Aug 2025 02:08:35 GMT"
+          "Tue, 28 Oct 2025 07:45:32 GMT"
         ],
         "Content-Type": [
           "application/json"
@@ -643,12 +619,12 @@
           "31"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"job_1754041095307_0024\"\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"job_1761634043372_0007\"\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/templeton/v1/jobs/job_1754041095307_0024?user.name=admin&fields=*",
-      "EncodedRequestUri": "L3RlbXBsZXRvbi92MS9qb2JzL2pvYl8xNzU0MDQxMDk1MzA3XzAwMjQ/dXNlci5uYW1lPWFkbWluJmZpZWxkcz0q",
+      "RequestUri": "/templeton/v1/jobs/job_1761634043372_0007?user.name=admin&fields=*",
+      "EncodedRequestUri": "L3RlbXBsZXRvbi92MS9qb2JzL2pvYl8xNzYxNjM0MDQzMzcyXzAwMDc/dXNlci5uYW1lPWFkbWluJmZpZWxkcz0q",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": [
@@ -668,16 +644,16 @@
       "RequestBody": "",
       "ResponseHeaders": {
         "request-id": [
-          "63f2395bfc9741f58e592e56b3c196da"
+          "c7758609c8b149b7a8dd7680289a675b"
         ],
         "x-ms-hdi-active": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net"
         ],
         "x-ms-hdi-http-host": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:30111"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:30111"
         ],
         "x-ms-hdi-http-gateway": [
-          "gw2-b38c3d"
+          "gw0-3780cb"
         ],
         "X-Frame-Options": [
           "DENY"
@@ -686,27 +662,27 @@
           "max-age=31536000; includeSubDomains"
         ],
         "Set-Cookie": [
-          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1754309315863&s=wV5wVSb17Z0jxZ+D3zCgmoesnaXOwnjZ6YIkU2h+xZE=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
+          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1761673535004&s=O9BtbsoXFpKgsLBRbIlsshCUX1KLpwNVQIgeAdV2avc=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
         ],
         "Content-Security-Policy": [
           "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self'; img-src 'self' *.blob.core.windows.net secure.gravatar.com extjs.com grafanarel.s3.amazonaws.com data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;"
         ],
         "Date": [
-          "Mon, 04 Aug 2025 02:08:36 GMT"
+          "Tue, 28 Oct 2025 07:45:35 GMT"
         ],
         "Content-Type": [
           "application/json"
         ],
         "Content-Length": [
-          "1534"
+          "1532"
         ]
       },
-      "ResponseBody": "{\r\n  \"status\": {\r\n    \"mapProgress\": 0.0,\r\n    \"reduceProgress\": 0.0,\r\n    \"cleanupProgress\": 0.0,\r\n    \"setupProgress\": 0.0,\r\n    \"runState\": 4,\r\n    \"startTime\": 1754273314364,\r\n    \"queue\": \"default\",\r\n    \"priority\": \"DEFAULT\",\r\n    \"schedulingInfo\": \"NA\",\r\n    \"failureInfo\": \"NA\",\r\n    \"jobACLs\": {},\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobFile\": \"/mapreducestaging/admin/.staging/job_1754041095307_0024/job.xml\",\r\n    \"finishTime\": 0,\r\n    \"historyFile\": \"\",\r\n    \"trackingUrl\": \"http://hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:8088/proxy/application_1754041095307_0024/\",\r\n    \"numUsedSlots\": 0,\r\n    \"numReservedSlots\": 0,\r\n    \"usedMem\": 0,\r\n    \"reservedMem\": 0,\r\n    \"neededMem\": 0,\r\n    \"username\": \"admin\",\r\n    \"jobId\": \"job_1754041095307_0024\",\r\n    \"jobID\": {\r\n      \"id\": 24,\r\n      \"jtIdentifier\": \"1754041095307\"\r\n    },\r\n    \"jobPriority\": \"DEFAULT\",\r\n    \"uber\": false,\r\n    \"jobComplete\": false,\r\n    \"retired\": false,\r\n    \"state\": \"PREP\"\r\n  },\r\n  \"profile\": {\r\n    \"user\": \"admin\",\r\n    \"jobFile\": \"/mapreducestaging/admin/.staging/job_1754041095307_0024/job.xml\",\r\n    \"url\": \"http://hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:8088/proxy/application_1754041095307_0024/\",\r\n    \"queueName\": \"default\",\r\n    \"jobId\": \"job_1754041095307_0024\",\r\n    \"jobID\": {\r\n      \"id\": 24,\r\n      \"jtIdentifier\": \"1754041095307\"\r\n    },\r\n    \"jobName\": \"TempletonControllerJob\"\r\n  },\r\n  \"id\": \"job_1754041095307_0024\",\r\n  \"parentId\": null,\r\n  \"percentComplete\": null,\r\n  \"exitValue\": null,\r\n  \"user\": \"admin\",\r\n  \"callback\": null,\r\n  \"completed\": null,\r\n  \"userargs\": {\r\n    \"statusdir\": \"2025-08-04T02-08-29-0740ce7d-45c8-478f-8c53-b84ae224f6d1\",\r\n    \"file\": null,\r\n    \"enablejobreconnect\": null,\r\n    \"define\": [],\r\n    \"enablelog\": \"false\",\r\n    \"user.name\": \"admin\",\r\n    \"files\": null,\r\n    \"callback\": null,\r\n    \"execute\": \"select count(*) from default.hivesampletable\"\r\n  },\r\n  \"msg\": null\r\n}",
+      "ResponseBody": "{\r\n  \"status\": {\r\n    \"mapProgress\": 0.0,\r\n    \"reduceProgress\": 0.0,\r\n    \"cleanupProgress\": 0.0,\r\n    \"setupProgress\": 0.0,\r\n    \"runState\": 4,\r\n    \"startTime\": 1761637531582,\r\n    \"queue\": \"default\",\r\n    \"priority\": \"DEFAULT\",\r\n    \"schedulingInfo\": \"NA\",\r\n    \"failureInfo\": \"NA\",\r\n    \"jobACLs\": {},\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobFile\": \"/mapreducestaging/admin/.staging/job_1761634043372_0007/job.xml\",\r\n    \"finishTime\": 0,\r\n    \"historyFile\": \"\",\r\n    \"trackingUrl\": \"http://hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:8088/proxy/application_1761634043372_0007/\",\r\n    \"numUsedSlots\": 0,\r\n    \"numReservedSlots\": 0,\r\n    \"usedMem\": 0,\r\n    \"reservedMem\": 0,\r\n    \"neededMem\": 0,\r\n    \"jobId\": \"job_1761634043372_0007\",\r\n    \"jobPriority\": \"DEFAULT\",\r\n    \"jobID\": {\r\n      \"id\": 7,\r\n      \"jtIdentifier\": \"1761634043372\"\r\n    },\r\n    \"username\": \"admin\",\r\n    \"jobComplete\": false,\r\n    \"retired\": false,\r\n    \"state\": \"PREP\",\r\n    \"uber\": false\r\n  },\r\n  \"profile\": {\r\n    \"user\": \"admin\",\r\n    \"jobFile\": \"/mapreducestaging/admin/.staging/job_1761634043372_0007/job.xml\",\r\n    \"url\": \"http://hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:8088/proxy/application_1761634043372_0007/\",\r\n    \"queueName\": \"default\",\r\n    \"jobId\": \"job_1761634043372_0007\",\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobID\": {\r\n      \"id\": 7,\r\n      \"jtIdentifier\": \"1761634043372\"\r\n    }\r\n  },\r\n  \"id\": \"job_1761634043372_0007\",\r\n  \"parentId\": null,\r\n  \"percentComplete\": null,\r\n  \"exitValue\": null,\r\n  \"user\": \"admin\",\r\n  \"callback\": null,\r\n  \"completed\": null,\r\n  \"userargs\": {\r\n    \"statusdir\": \"2025-10-28T07-45-23-03f22fc3-3aba-438b-a489-dfeb3a92a0c5\",\r\n    \"file\": null,\r\n    \"enablejobreconnect\": null,\r\n    \"define\": [],\r\n    \"enablelog\": \"false\",\r\n    \"user.name\": \"admin\",\r\n    \"files\": null,\r\n    \"callback\": null,\r\n    \"execute\": \"select count(*) from default.hivesampletable\"\r\n  },\r\n  \"msg\": null\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/templeton/v1/jobs/job_1754041095307_0024?user.name=admin&fields=*",
-      "EncodedRequestUri": "L3RlbXBsZXRvbi92MS9qb2JzL2pvYl8xNzU0MDQxMDk1MzA3XzAwMjQ/dXNlci5uYW1lPWFkbWluJmZpZWxkcz0q",
+      "RequestUri": "/templeton/v1/jobs/job_1761634043372_0007?user.name=admin&fields=*",
+      "EncodedRequestUri": "L3RlbXBsZXRvbi92MS9qb2JzL2pvYl8xNzYxNjM0MDQzMzcyXzAwMDc/dXNlci5uYW1lPWFkbWluJmZpZWxkcz0q",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": [
@@ -726,16 +702,16 @@
       "RequestBody": "",
       "ResponseHeaders": {
         "request-id": [
-          "69c328525b514d6db33e2b6e0d5b1b10"
+          "f9eff402dcab403dac6d559828a4956e"
         ],
         "x-ms-hdi-active": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net"
         ],
         "x-ms-hdi-http-host": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:30111"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:30111"
         ],
         "x-ms-hdi-http-gateway": [
-          "gw2-b38c3d"
+          "gw0-3780cb"
         ],
         "X-Frame-Options": [
           "DENY"
@@ -744,27 +720,27 @@
           "max-age=31536000; includeSubDomains"
         ],
         "Set-Cookie": [
-          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1754309412053&s=+Ij3EiVi4RdufapP+/B6bfr14vwzDoHuzeal5VQCxoU=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
+          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1761673628804&s=PCe+qDOe0934ZpUMTWHLyohrVsQeh6xejCszjfCQag0=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
         ],
         "Content-Security-Policy": [
           "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self'; img-src 'self' *.blob.core.windows.net secure.gravatar.com extjs.com grafanarel.s3.amazonaws.com data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;"
         ],
         "Date": [
-          "Mon, 04 Aug 2025 02:10:12 GMT"
+          "Tue, 28 Oct 2025 07:47:09 GMT"
         ],
         "Content-Type": [
           "application/json"
         ],
         "Content-Length": [
-          "1991"
+          "1958"
         ]
       },
-      "ResponseBody": "{\r\n  \"status\": {\r\n    \"mapProgress\": 1.0,\r\n    \"reduceProgress\": 1.0,\r\n    \"cleanupProgress\": 0.0,\r\n    \"setupProgress\": 0.0,\r\n    \"runState\": 2,\r\n    \"startTime\": 1754273322937,\r\n    \"queue\": \"default\",\r\n    \"priority\": \"DEFAULT\",\r\n    \"schedulingInfo\": \"NA\",\r\n    \"failureInfo\": \"NA\",\r\n    \"jobACLs\": {},\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobFile\": \"wasbs://ps-test-cluster-2025-08-01t09-20-50-533z@storagepstest1508.blob.core.windows.net/mr-history/done/2025/08/04/000000/job_1754041095307_0024_conf.xml\",\r\n    \"finishTime\": 1754273382925,\r\n    \"historyFile\": \"wasbs://ps-test-cluster-2025-08-01t09-20-50-533z@storagepstest1508.blob.core.windows.net/mr-history/done/2025/08/04/000000/job_1754041095307_0024-1754273314363-admin-TempletonControllerJob-1754273382925-1-0-SUCCEEDED-joblauncher-1754273322937.jhist\",\r\n    \"trackingUrl\": \"http://hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:19888/jobhistory/job/job_1754041095307_0024\",\r\n    \"numUsedSlots\": 0,\r\n    \"numReservedSlots\": 0,\r\n    \"usedMem\": 0,\r\n    \"reservedMem\": 0,\r\n    \"neededMem\": 0,\r\n    \"username\": \"admin\",\r\n    \"jobId\": \"job_1754041095307_0024\",\r\n    \"jobID\": {\r\n      \"id\": 24,\r\n      \"jtIdentifier\": \"1754041095307\"\r\n    },\r\n    \"jobPriority\": \"DEFAULT\",\r\n    \"uber\": true,\r\n    \"jobComplete\": true,\r\n    \"retired\": false,\r\n    \"state\": \"SUCCEEDED\"\r\n  },\r\n  \"profile\": {\r\n    \"user\": \"admin\",\r\n    \"jobFile\": \"wasbs://ps-test-cluster-2025-08-01t09-20-50-533z@storagepstest1508.blob.core.windows.net/mr-history/done/2025/08/04/000000/job_1754041095307_0024_conf.xml\",\r\n    \"url\": \"http://hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:19888/jobhistory/job/job_1754041095307_0024\",\r\n    \"queueName\": \"default\",\r\n    \"jobId\": \"job_1754041095307_0024\",\r\n    \"jobID\": {\r\n      \"id\": 24,\r\n      \"jtIdentifier\": \"1754041095307\"\r\n    },\r\n    \"jobName\": \"TempletonControllerJob\"\r\n  },\r\n  \"id\": \"job_1754041095307_0024\",\r\n  \"parentId\": null,\r\n  \"percentComplete\": \"100% complete\",\r\n  \"exitValue\": 0,\r\n  \"user\": \"admin\",\r\n  \"callback\": null,\r\n  \"completed\": \"done\",\r\n  \"userargs\": {\r\n    \"statusdir\": \"2025-08-04T02-08-29-0740ce7d-45c8-478f-8c53-b84ae224f6d1\",\r\n    \"file\": null,\r\n    \"enablejobreconnect\": null,\r\n    \"define\": [],\r\n    \"enablelog\": \"false\",\r\n    \"user.name\": \"admin\",\r\n    \"files\": null,\r\n    \"callback\": null,\r\n    \"execute\": \"select count(*) from default.hivesampletable\"\r\n  },\r\n  \"msg\": null\r\n}",
+      "ResponseBody": "{\r\n  \"status\": {\r\n    \"mapProgress\": 1.0,\r\n    \"reduceProgress\": 1.0,\r\n    \"cleanupProgress\": 0.0,\r\n    \"setupProgress\": 0.0,\r\n    \"runState\": 2,\r\n    \"startTime\": 1761637539670,\r\n    \"queue\": \"default\",\r\n    \"priority\": \"DEFAULT\",\r\n    \"schedulingInfo\": \"NA\",\r\n    \"failureInfo\": \"NA\",\r\n    \"jobACLs\": {},\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobFile\": \"wasbs://hdi-2025-10-28t06-31-30-379z@yk01wasb666666666666.blob.core.windows.net/mr-history/done/2025/10/28/000000/job_1761634043372_0007_conf.xml\",\r\n    \"finishTime\": 1761637601710,\r\n    \"historyFile\": \"wasbs://hdi-2025-10-28t06-31-30-379z@yk01wasb666666666666.blob.core.windows.net/mr-history/done/2025/10/28/000000/job_1761634043372_0007-1761637531581-admin-TempletonControllerJob-1761637601710-1-0-SUCCEEDED-default-1761637539670.jhist\",\r\n    \"trackingUrl\": \"http://hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:19888/jobhistory/job/job_1761634043372_0007\",\r\n    \"numUsedSlots\": 0,\r\n    \"numReservedSlots\": 0,\r\n    \"usedMem\": 0,\r\n    \"reservedMem\": 0,\r\n    \"neededMem\": 0,\r\n    \"jobId\": \"job_1761634043372_0007\",\r\n    \"jobPriority\": \"DEFAULT\",\r\n    \"jobID\": {\r\n      \"id\": 7,\r\n      \"jtIdentifier\": \"1761634043372\"\r\n    },\r\n    \"username\": \"admin\",\r\n    \"jobComplete\": true,\r\n    \"retired\": false,\r\n    \"state\": \"SUCCEEDED\",\r\n    \"uber\": true\r\n  },\r\n  \"profile\": {\r\n    \"user\": \"admin\",\r\n    \"jobFile\": \"wasbs://hdi-2025-10-28t06-31-30-379z@yk01wasb666666666666.blob.core.windows.net/mr-history/done/2025/10/28/000000/job_1761634043372_0007_conf.xml\",\r\n    \"url\": \"http://hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:19888/jobhistory/job/job_1761634043372_0007\",\r\n    \"queueName\": \"default\",\r\n    \"jobId\": \"job_1761634043372_0007\",\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobID\": {\r\n      \"id\": 7,\r\n      \"jtIdentifier\": \"1761634043372\"\r\n    }\r\n  },\r\n  \"id\": \"job_1761634043372_0007\",\r\n  \"parentId\": null,\r\n  \"percentComplete\": \"100% complete\",\r\n  \"exitValue\": 0,\r\n  \"user\": \"admin\",\r\n  \"callback\": null,\r\n  \"completed\": \"done\",\r\n  \"userargs\": {\r\n    \"statusdir\": \"2025-10-28T07-45-23-03f22fc3-3aba-438b-a489-dfeb3a92a0c5\",\r\n    \"file\": null,\r\n    \"enablejobreconnect\": null,\r\n    \"define\": [],\r\n    \"enablelog\": \"false\",\r\n    \"user.name\": \"admin\",\r\n    \"files\": null,\r\n    \"callback\": null,\r\n    \"execute\": \"select count(*) from default.hivesampletable\"\r\n  },\r\n  \"msg\": null\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/templeton/v1/jobs/job_1754041095307_0024?user.name=admin&fields=*",
-      "EncodedRequestUri": "L3RlbXBsZXRvbi92MS9qb2JzL2pvYl8xNzU0MDQxMDk1MzA3XzAwMjQ/dXNlci5uYW1lPWFkbWluJmZpZWxkcz0q",
+      "RequestUri": "/templeton/v1/jobs/job_1761634043372_0007?user.name=admin&fields=*",
+      "EncodedRequestUri": "L3RlbXBsZXRvbi92MS9qb2JzL2pvYl8xNzYxNjM0MDQzMzcyXzAwMDc/dXNlci5uYW1lPWFkbWluJmZpZWxkcz0q",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": [
@@ -784,16 +760,16 @@
       "RequestBody": "",
       "ResponseHeaders": {
         "request-id": [
-          "9eaca9303cb240839533550db624eca3"
+          "1902ffd439214355b2909ed474d276bd"
         ],
         "x-ms-hdi-active": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net"
         ],
         "x-ms-hdi-http-host": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:30111"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:30111"
         ],
         "x-ms-hdi-http-gateway": [
-          "gw1-b38c3d"
+          "gw0-3780cb"
         ],
         "X-Frame-Options": [
           "DENY"
@@ -802,27 +778,27 @@
           "max-age=31536000; includeSubDomains"
         ],
         "Set-Cookie": [
-          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1754309414502&s=2L32+HxzMyeJJOuGFXc/gk+zeeuxexhWjwnPhx0P9KM=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
+          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1761673631571&s=KbPZkce0/7ZlobVIqq92FUoclob2K4USGDBXpS9HkyQ=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
         ],
         "Content-Security-Policy": [
           "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self'; img-src 'self' *.blob.core.windows.net secure.gravatar.com extjs.com grafanarel.s3.amazonaws.com data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;"
         ],
         "Date": [
-          "Mon, 04 Aug 2025 02:10:14 GMT"
+          "Tue, 28 Oct 2025 07:47:12 GMT"
         ],
         "Content-Type": [
           "application/json"
         ],
         "Content-Length": [
-          "1991"
+          "1958"
         ]
       },
-      "ResponseBody": "{\r\n  \"status\": {\r\n    \"mapProgress\": 1.0,\r\n    \"reduceProgress\": 1.0,\r\n    \"cleanupProgress\": 0.0,\r\n    \"setupProgress\": 0.0,\r\n    \"runState\": 2,\r\n    \"startTime\": 1754273322937,\r\n    \"queue\": \"default\",\r\n    \"priority\": \"DEFAULT\",\r\n    \"schedulingInfo\": \"NA\",\r\n    \"failureInfo\": \"NA\",\r\n    \"jobACLs\": {},\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobFile\": \"wasbs://ps-test-cluster-2025-08-01t09-20-50-533z@storagepstest1508.blob.core.windows.net/mr-history/done/2025/08/04/000000/job_1754041095307_0024_conf.xml\",\r\n    \"finishTime\": 1754273382925,\r\n    \"historyFile\": \"wasbs://ps-test-cluster-2025-08-01t09-20-50-533z@storagepstest1508.blob.core.windows.net/mr-history/done/2025/08/04/000000/job_1754041095307_0024-1754273314363-admin-TempletonControllerJob-1754273382925-1-0-SUCCEEDED-joblauncher-1754273322937.jhist\",\r\n    \"trackingUrl\": \"http://hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:19888/jobhistory/job/job_1754041095307_0024\",\r\n    \"numUsedSlots\": 0,\r\n    \"numReservedSlots\": 0,\r\n    \"usedMem\": 0,\r\n    \"reservedMem\": 0,\r\n    \"neededMem\": 0,\r\n    \"username\": \"admin\",\r\n    \"jobId\": \"job_1754041095307_0024\",\r\n    \"jobID\": {\r\n      \"id\": 24,\r\n      \"jtIdentifier\": \"1754041095307\"\r\n    },\r\n    \"jobPriority\": \"DEFAULT\",\r\n    \"uber\": true,\r\n    \"jobComplete\": true,\r\n    \"retired\": false,\r\n    \"state\": \"SUCCEEDED\"\r\n  },\r\n  \"profile\": {\r\n    \"user\": \"admin\",\r\n    \"jobFile\": \"wasbs://ps-test-cluster-2025-08-01t09-20-50-533z@storagepstest1508.blob.core.windows.net/mr-history/done/2025/08/04/000000/job_1754041095307_0024_conf.xml\",\r\n    \"url\": \"http://hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:19888/jobhistory/job/job_1754041095307_0024\",\r\n    \"queueName\": \"default\",\r\n    \"jobId\": \"job_1754041095307_0024\",\r\n    \"jobID\": {\r\n      \"id\": 24,\r\n      \"jtIdentifier\": \"1754041095307\"\r\n    },\r\n    \"jobName\": \"TempletonControllerJob\"\r\n  },\r\n  \"id\": \"job_1754041095307_0024\",\r\n  \"parentId\": null,\r\n  \"percentComplete\": \"100% complete\",\r\n  \"exitValue\": 0,\r\n  \"user\": \"admin\",\r\n  \"callback\": null,\r\n  \"completed\": \"done\",\r\n  \"userargs\": {\r\n    \"statusdir\": \"2025-08-04T02-08-29-0740ce7d-45c8-478f-8c53-b84ae224f6d1\",\r\n    \"file\": null,\r\n    \"enablejobreconnect\": null,\r\n    \"define\": [],\r\n    \"enablelog\": \"false\",\r\n    \"user.name\": \"admin\",\r\n    \"files\": null,\r\n    \"callback\": null,\r\n    \"execute\": \"select count(*) from default.hivesampletable\"\r\n  },\r\n  \"msg\": null\r\n}",
+      "ResponseBody": "{\r\n  \"status\": {\r\n    \"mapProgress\": 1.0,\r\n    \"reduceProgress\": 1.0,\r\n    \"cleanupProgress\": 0.0,\r\n    \"setupProgress\": 0.0,\r\n    \"runState\": 2,\r\n    \"startTime\": 1761637539670,\r\n    \"queue\": \"default\",\r\n    \"priority\": \"DEFAULT\",\r\n    \"schedulingInfo\": \"NA\",\r\n    \"failureInfo\": \"NA\",\r\n    \"jobACLs\": {},\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobFile\": \"wasbs://hdi-2025-10-28t06-31-30-379z@yk01wasb666666666666.blob.core.windows.net/mr-history/done/2025/10/28/000000/job_1761634043372_0007_conf.xml\",\r\n    \"finishTime\": 1761637601710,\r\n    \"historyFile\": \"wasbs://hdi-2025-10-28t06-31-30-379z@yk01wasb666666666666.blob.core.windows.net/mr-history/done/2025/10/28/000000/job_1761634043372_0007-1761637531581-admin-TempletonControllerJob-1761637601710-1-0-SUCCEEDED-default-1761637539670.jhist\",\r\n    \"trackingUrl\": \"http://hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:19888/jobhistory/job/job_1761634043372_0007\",\r\n    \"numUsedSlots\": 0,\r\n    \"numReservedSlots\": 0,\r\n    \"usedMem\": 0,\r\n    \"reservedMem\": 0,\r\n    \"neededMem\": 0,\r\n    \"jobId\": \"job_1761634043372_0007\",\r\n    \"jobPriority\": \"DEFAULT\",\r\n    \"jobID\": {\r\n      \"id\": 7,\r\n      \"jtIdentifier\": \"1761634043372\"\r\n    },\r\n    \"username\": \"admin\",\r\n    \"jobComplete\": true,\r\n    \"retired\": false,\r\n    \"state\": \"SUCCEEDED\",\r\n    \"uber\": true\r\n  },\r\n  \"profile\": {\r\n    \"user\": \"admin\",\r\n    \"jobFile\": \"wasbs://hdi-2025-10-28t06-31-30-379z@yk01wasb666666666666.blob.core.windows.net/mr-history/done/2025/10/28/000000/job_1761634043372_0007_conf.xml\",\r\n    \"url\": \"http://hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:19888/jobhistory/job/job_1761634043372_0007\",\r\n    \"queueName\": \"default\",\r\n    \"jobId\": \"job_1761634043372_0007\",\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobID\": {\r\n      \"id\": 7,\r\n      \"jtIdentifier\": \"1761634043372\"\r\n    }\r\n  },\r\n  \"id\": \"job_1761634043372_0007\",\r\n  \"parentId\": null,\r\n  \"percentComplete\": \"100% complete\",\r\n  \"exitValue\": 0,\r\n  \"user\": \"admin\",\r\n  \"callback\": null,\r\n  \"completed\": \"done\",\r\n  \"userargs\": {\r\n    \"statusdir\": \"2025-10-28T07-45-23-03f22fc3-3aba-438b-a489-dfeb3a92a0c5\",\r\n    \"file\": null,\r\n    \"enablejobreconnect\": null,\r\n    \"define\": [],\r\n    \"enablelog\": \"false\",\r\n    \"user.name\": \"admin\",\r\n    \"files\": null,\r\n    \"callback\": null,\r\n    \"execute\": \"select count(*) from default.hivesampletable\"\r\n  },\r\n  \"msg\": null\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/ws/v1/cluster/apps/application_1754041095307_0024/state",
-      "EncodedRequestUri": "L3dzL3YxL2NsdXN0ZXIvYXBwcy9hcHBsaWNhdGlvbl8xNzU0MDQxMDk1MzA3XzAwMjQvc3RhdGU=",
+      "RequestUri": "/ws/v1/cluster/apps/application_1761634043372_0007/state",
+      "EncodedRequestUri": "L3dzL3YxL2NsdXN0ZXIvYXBwcy9hcHBsaWNhdGlvbl8xNzYxNjM0MDQzMzcyXzAwMDcvc3RhdGU=",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": [
@@ -851,16 +827,16 @@
           "Accept-Encoding"
         ],
         "request-id": [
-          "9fdc4d17a5394a95a8250e1feaa8af01"
+          "7b8eedee514c434bba1afde84b885d7d"
         ],
         "x-ms-hdi-active": [
-          "hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net"
         ],
         "x-ms-hdi-http-host": [
-          "hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:8088"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:8088"
         ],
         "x-ms-hdi-http-gateway": [
-          "gw2-b38c3d"
+          "gw0-3780cb"
         ],
         "X-Content-Type-Options": [
           "nosniff"
@@ -878,13 +854,13 @@
           "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self'; img-src 'self' *.blob.core.windows.net secure.gravatar.com extjs.com grafanarel.s3.amazonaws.com data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;"
         ],
         "Date": [
-          "Mon, 04 Aug 2025 02:08:37 GMT"
+          "Tue, 28 Oct 2025 07:45:37 GMT"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
         ],
         "Expires": [
-          "Mon, 04 Aug 2025 02:08:37 GMT"
+          "Tue, 28 Oct 2025 07:45:37 GMT"
         ],
         "Content-Length": [
           "20"
@@ -894,8 +870,8 @@
       "StatusCode": 200
     },
     {
-      "RequestUri": "/ws/v1/cluster/apps/application_1754041095307_0024/state",
-      "EncodedRequestUri": "L3dzL3YxL2NsdXN0ZXIvYXBwcy9hcHBsaWNhdGlvbl8xNzU0MDQxMDk1MzA3XzAwMjQvc3RhdGU=",
+      "RequestUri": "/ws/v1/cluster/apps/application_1761634043372_0007/state",
+      "EncodedRequestUri": "L3dzL3YxL2NsdXN0ZXIvYXBwcy9hcHBsaWNhdGlvbl8xNzYxNjM0MDQzMzcyXzAwMDcvc3RhdGU=",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": [
@@ -924,16 +900,16 @@
           "Accept-Encoding"
         ],
         "request-id": [
-          "570df0faf8ec48248c32110b50b3d8c9"
+          "b278aab8a5364591a2a35f1d15723157"
         ],
         "x-ms-hdi-active": [
-          "hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net"
         ],
         "x-ms-hdi-http-host": [
-          "hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:8088"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:8088"
         ],
         "x-ms-hdi-http-gateway": [
-          "gw2-b38c3d"
+          "gw0-3780cb"
         ],
         "X-Content-Type-Options": [
           "nosniff"
@@ -951,13 +927,13 @@
           "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self'; img-src 'self' *.blob.core.windows.net secure.gravatar.com extjs.com grafanarel.s3.amazonaws.com data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;"
         ],
         "Date": [
-          "Mon, 04 Aug 2025 02:09:07 GMT"
+          "Tue, 28 Oct 2025 07:46:07 GMT"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
         ],
         "Expires": [
-          "Mon, 04 Aug 2025 02:09:07 GMT"
+          "Tue, 28 Oct 2025 07:46:07 GMT"
         ],
         "Content-Length": [
           "19"
@@ -967,8 +943,8 @@
       "StatusCode": 200
     },
     {
-      "RequestUri": "/ws/v1/cluster/apps/application_1754041095307_0024/state",
-      "EncodedRequestUri": "L3dzL3YxL2NsdXN0ZXIvYXBwcy9hcHBsaWNhdGlvbl8xNzU0MDQxMDk1MzA3XzAwMjQvc3RhdGU=",
+      "RequestUri": "/ws/v1/cluster/apps/application_1761634043372_0007/state",
+      "EncodedRequestUri": "L3dzL3YxL2NsdXN0ZXIvYXBwcy9hcHBsaWNhdGlvbl8xNzYxNjM0MDQzMzcyXzAwMDcvc3RhdGU=",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": [
@@ -997,16 +973,16 @@
           "Accept-Encoding"
         ],
         "request-id": [
-          "1fd70ef1c3f74380b8703589b78e36a8"
+          "29cd6ea28f0b4aa0a44398ed7b6922f7"
         ],
         "x-ms-hdi-active": [
-          "hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net"
         ],
         "x-ms-hdi-http-host": [
-          "hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:8088"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:8088"
         ],
         "x-ms-hdi-http-gateway": [
-          "gw2-b38c3d"
+          "gw0-3780cb"
         ],
         "X-Content-Type-Options": [
           "nosniff"
@@ -1024,13 +1000,13 @@
           "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self'; img-src 'self' *.blob.core.windows.net secure.gravatar.com extjs.com grafanarel.s3.amazonaws.com data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;"
         ],
         "Date": [
-          "Mon, 04 Aug 2025 02:09:38 GMT"
+          "Tue, 28 Oct 2025 07:46:37 GMT"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
         ],
         "Expires": [
-          "Mon, 04 Aug 2025 02:09:38 GMT"
+          "Tue, 28 Oct 2025 07:46:37 GMT"
         ],
         "Content-Length": [
           "19"
@@ -1040,8 +1016,8 @@
       "StatusCode": 200
     },
     {
-      "RequestUri": "/ws/v1/cluster/apps/application_1754041095307_0024/state",
-      "EncodedRequestUri": "L3dzL3YxL2NsdXN0ZXIvYXBwcy9hcHBsaWNhdGlvbl8xNzU0MDQxMDk1MzA3XzAwMjQvc3RhdGU=",
+      "RequestUri": "/ws/v1/cluster/apps/application_1761634043372_0007/state",
+      "EncodedRequestUri": "L3dzL3YxL2NsdXN0ZXIvYXBwcy9hcHBsaWNhdGlvbl8xNzYxNjM0MDQzMzcyXzAwMDcvc3RhdGU=",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": [
@@ -1070,16 +1046,16 @@
           "Accept-Encoding"
         ],
         "request-id": [
-          "e87ce474368c4e76904cd5ae047c5c1f"
+          "4eb22a7c216d412ea59ed7e93bb1110c"
         ],
         "x-ms-hdi-active": [
-          "hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net"
         ],
         "x-ms-hdi-http-host": [
-          "hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:8088"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:8088"
         ],
         "x-ms-hdi-http-gateway": [
-          "gw2-b38c3d"
+          "gw0-3780cb"
         ],
         "X-Content-Type-Options": [
           "nosniff"
@@ -1097,13 +1073,13 @@
           "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self'; img-src 'self' *.blob.core.windows.net secure.gravatar.com extjs.com grafanarel.s3.amazonaws.com data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;"
         ],
         "Date": [
-          "Mon, 04 Aug 2025 02:10:11 GMT"
+          "Tue, 28 Oct 2025 07:47:08 GMT"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
         ],
         "Expires": [
-          "Mon, 04 Aug 2025 02:10:11 GMT"
+          "Tue, 28 Oct 2025 07:47:08 GMT"
         ],
         "Content-Length": [
           "20"
@@ -1137,19 +1113,19 @@
           "143"
         ]
       },
-      "RequestBody": "jar=%2Fexample%2Fjars%2Fhadoop-mapreduce-examples.jar&class=pi&arg=10&arg=10&statusdir=2025-08-04T02-10-15-75cd3fa2-a38b-4902-b692-084ea11ec425",
+      "RequestBody": "jar=%2Fexample%2Fjars%2Fhadoop-mapreduce-examples.jar&class=pi&arg=10&arg=10&statusdir=2025-10-28T07-47-12-8a63d3e6-c8e9-41ce-a197-10cb502e8d93",
       "ResponseHeaders": {
         "request-id": [
-          "972698923e0b4039a1fa4a90e1200d45"
+          "f263ff246dcc44b4af8a3c510dccda6c"
         ],
         "x-ms-hdi-active": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net"
         ],
         "x-ms-hdi-http-host": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:30111"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:30111"
         ],
         "x-ms-hdi-http-gateway": [
-          "gw2-b38c3d"
+          "gw1-3780cb"
         ],
         "X-Frame-Options": [
           "DENY"
@@ -1158,13 +1134,13 @@
           "max-age=31536000; includeSubDomains"
         ],
         "Set-Cookie": [
-          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1754309416715&s=KVGKv6tCqskXawNZTB8K/jD7LImDJgzLLA7bZ6Wja5I=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
+          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1761673635643&s=dEfLQpItl8++KwSAI8JWQ5W9VwliU98wIwzPsdKRcY8=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
         ],
         "Content-Security-Policy": [
           "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self'; img-src 'self' *.blob.core.windows.net secure.gravatar.com extjs.com grafanarel.s3.amazonaws.com data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;"
         ],
         "Date": [
-          "Mon, 04 Aug 2025 02:10:20 GMT"
+          "Tue, 28 Oct 2025 07:47:19 GMT"
         ],
         "Content-Type": [
           "application/json"
@@ -1173,12 +1149,12 @@
           "31"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"job_1754041095307_0026\"\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"job_1761634043372_0009\"\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/templeton/v1/jobs/job_1754041095307_0026?user.name=admin&fields=*",
-      "EncodedRequestUri": "L3RlbXBsZXRvbi92MS9qb2JzL2pvYl8xNzU0MDQxMDk1MzA3XzAwMjY/dXNlci5uYW1lPWFkbWluJmZpZWxkcz0q",
+      "RequestUri": "/templeton/v1/jobs/job_1761634043372_0009?user.name=admin&fields=*",
+      "EncodedRequestUri": "L3RlbXBsZXRvbi92MS9qb2JzL2pvYl8xNzYxNjM0MDQzMzcyXzAwMDk/dXNlci5uYW1lPWFkbWluJmZpZWxkcz0q",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": [
@@ -1198,16 +1174,16 @@
       "RequestBody": "",
       "ResponseHeaders": {
         "request-id": [
-          "6f3edbdf6d214a01aa689a2fff345643"
+          "fff113f064ab48ac892dc56038fa2ce6"
         ],
         "x-ms-hdi-active": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net"
         ],
         "x-ms-hdi-http-host": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:30111"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:30111"
         ],
         "x-ms-hdi-http-gateway": [
-          "gw0-b38c3d"
+          "gw0-3780cb"
         ],
         "X-Frame-Options": [
           "DENY"
@@ -1216,27 +1192,27 @@
           "max-age=31536000; includeSubDomains"
         ],
         "Set-Cookie": [
-          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1754309420709&s=Lr86T2gqo17Nva1cIJeE5eBTfikxP7rEvMa6eLeJNGw=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
+          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1761673639773&s=m1vSZQq1VMCI3mM0YGPVYEtlpgeZzBj+YQb3xaZiTnQ=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
         ],
         "Content-Security-Policy": [
           "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self'; img-src 'self' *.blob.core.windows.net secure.gravatar.com extjs.com grafanarel.s3.amazonaws.com data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;"
         ],
         "Date": [
-          "Mon, 04 Aug 2025 02:10:21 GMT"
+          "Tue, 28 Oct 2025 07:47:20 GMT"
         ],
         "Content-Type": [
           "application/json"
         ],
         "Content-Length": [
-          "1563"
+          "1561"
         ]
       },
-      "ResponseBody": "{\r\n  \"status\": {\r\n    \"mapProgress\": 0.0,\r\n    \"reduceProgress\": 0.0,\r\n    \"cleanupProgress\": 0.0,\r\n    \"setupProgress\": 0.0,\r\n    \"runState\": 4,\r\n    \"startTime\": 1754273419398,\r\n    \"queue\": \"default\",\r\n    \"priority\": \"DEFAULT\",\r\n    \"schedulingInfo\": \"NA\",\r\n    \"failureInfo\": \"NA\",\r\n    \"jobACLs\": {},\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobFile\": \"/mapreducestaging/admin/.staging/job_1754041095307_0026/job.xml\",\r\n    \"finishTime\": 0,\r\n    \"historyFile\": \"\",\r\n    \"trackingUrl\": \"http://hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:8088/proxy/application_1754041095307_0026/\",\r\n    \"numUsedSlots\": 0,\r\n    \"numReservedSlots\": 0,\r\n    \"usedMem\": 0,\r\n    \"reservedMem\": 0,\r\n    \"neededMem\": 0,\r\n    \"username\": \"admin\",\r\n    \"jobId\": \"job_1754041095307_0026\",\r\n    \"jobID\": {\r\n      \"id\": 26,\r\n      \"jtIdentifier\": \"1754041095307\"\r\n    },\r\n    \"jobPriority\": \"DEFAULT\",\r\n    \"uber\": false,\r\n    \"jobComplete\": false,\r\n    \"retired\": false,\r\n    \"state\": \"PREP\"\r\n  },\r\n  \"profile\": {\r\n    \"user\": \"admin\",\r\n    \"jobFile\": \"/mapreducestaging/admin/.staging/job_1754041095307_0026/job.xml\",\r\n    \"url\": \"http://hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:8088/proxy/application_1754041095307_0026/\",\r\n    \"queueName\": \"default\",\r\n    \"jobId\": \"job_1754041095307_0026\",\r\n    \"jobID\": {\r\n      \"id\": 26,\r\n      \"jtIdentifier\": \"1754041095307\"\r\n    },\r\n    \"jobName\": \"TempletonControllerJob\"\r\n  },\r\n  \"id\": \"job_1754041095307_0026\",\r\n  \"parentId\": null,\r\n  \"percentComplete\": null,\r\n  \"exitValue\": null,\r\n  \"user\": \"admin\",\r\n  \"callback\": null,\r\n  \"completed\": null,\r\n  \"userargs\": {\r\n    \"statusdir\": \"2025-08-04T02-10-15-75cd3fa2-a38b-4902-b692-084ea11ec425\",\r\n    \"enablejobreconnect\": null,\r\n    \"arg\": [\r\n      \"10\",\r\n      \"10\"\r\n    ],\r\n    \"define\": [],\r\n    \"enablelog\": \"false\",\r\n    \"user.name\": \"admin\",\r\n    \"libjars\": null,\r\n    \"files\": null,\r\n    \"callback\": null,\r\n    \"jar\": \"/example/jars/hadoop-mapreduce-examples.jar\",\r\n    \"class\": \"pi\"\r\n  },\r\n  \"msg\": null\r\n}",
+      "ResponseBody": "{\r\n  \"status\": {\r\n    \"mapProgress\": 0.0,\r\n    \"reduceProgress\": 0.0,\r\n    \"cleanupProgress\": 0.0,\r\n    \"setupProgress\": 0.0,\r\n    \"runState\": 4,\r\n    \"startTime\": 1761637638462,\r\n    \"queue\": \"default\",\r\n    \"priority\": \"DEFAULT\",\r\n    \"schedulingInfo\": \"NA\",\r\n    \"failureInfo\": \"NA\",\r\n    \"jobACLs\": {},\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobFile\": \"/mapreducestaging/admin/.staging/job_1761634043372_0009/job.xml\",\r\n    \"finishTime\": 0,\r\n    \"historyFile\": \"\",\r\n    \"trackingUrl\": \"http://hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:8088/proxy/application_1761634043372_0009/\",\r\n    \"numUsedSlots\": 0,\r\n    \"numReservedSlots\": 0,\r\n    \"usedMem\": 0,\r\n    \"reservedMem\": 0,\r\n    \"neededMem\": 0,\r\n    \"jobId\": \"job_1761634043372_0009\",\r\n    \"jobPriority\": \"DEFAULT\",\r\n    \"jobID\": {\r\n      \"id\": 9,\r\n      \"jtIdentifier\": \"1761634043372\"\r\n    },\r\n    \"username\": \"admin\",\r\n    \"jobComplete\": false,\r\n    \"retired\": false,\r\n    \"state\": \"PREP\",\r\n    \"uber\": false\r\n  },\r\n  \"profile\": {\r\n    \"user\": \"admin\",\r\n    \"jobFile\": \"/mapreducestaging/admin/.staging/job_1761634043372_0009/job.xml\",\r\n    \"url\": \"http://hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:8088/proxy/application_1761634043372_0009/\",\r\n    \"queueName\": \"default\",\r\n    \"jobId\": \"job_1761634043372_0009\",\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobID\": {\r\n      \"id\": 9,\r\n      \"jtIdentifier\": \"1761634043372\"\r\n    }\r\n  },\r\n  \"id\": \"job_1761634043372_0009\",\r\n  \"parentId\": null,\r\n  \"percentComplete\": null,\r\n  \"exitValue\": null,\r\n  \"user\": \"admin\",\r\n  \"callback\": null,\r\n  \"completed\": null,\r\n  \"userargs\": {\r\n    \"statusdir\": \"2025-10-28T07-47-12-8a63d3e6-c8e9-41ce-a197-10cb502e8d93\",\r\n    \"enablejobreconnect\": null,\r\n    \"arg\": [\r\n      \"10\",\r\n      \"10\"\r\n    ],\r\n    \"define\": [],\r\n    \"enablelog\": \"false\",\r\n    \"user.name\": \"admin\",\r\n    \"libjars\": null,\r\n    \"files\": null,\r\n    \"callback\": null,\r\n    \"jar\": \"/example/jars/hadoop-mapreduce-examples.jar\",\r\n    \"class\": \"pi\"\r\n  },\r\n  \"msg\": null\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/templeton/v1/jobs/job_1754041095307_0026?user.name=admin",
-      "EncodedRequestUri": "L3RlbXBsZXRvbi92MS9qb2JzL2pvYl8xNzU0MDQxMDk1MzA3XzAwMjY/dXNlci5uYW1lPWFkbWlu",
+      "RequestUri": "/templeton/v1/jobs/job_1761634043372_0009?user.name=admin",
+      "EncodedRequestUri": "L3RlbXBsZXRvbi92MS9qb2JzL2pvYl8xNzYxNjM0MDQzMzcyXzAwMDk/dXNlci5uYW1lPWFkbWlu",
       "RequestMethod": "DELETE",
       "RequestHeaders": {
         "Accept": [
@@ -1256,16 +1232,16 @@
       "RequestBody": "",
       "ResponseHeaders": {
         "request-id": [
-          "2bc7e98046844c0bb467e81a0ad370a6"
+          "cf353638660949bf938f14a1c7e608ba"
         ],
         "x-ms-hdi-active": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net"
         ],
         "x-ms-hdi-http-host": [
-          "hn0-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:30111"
+          "hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:30111"
         ],
         "x-ms-hdi-http-gateway": [
-          "gw2-b38c3d"
+          "gw0-3780cb"
         ],
         "X-Frame-Options": [
           "DENY"
@@ -1274,27 +1250,27 @@
           "max-age=31536000; includeSubDomains"
         ],
         "Set-Cookie": [
-          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1754309422836&s=88SIX3+8PhrduXGqK2DKitmdBwRwXIvdBWbUS1UMDGM=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
+          "hadoop.auth=\"u=admin&p=admin&t=simple&e=1761673641939&s=n0a6Ez4MfkEx+efkBnriUaBjq4kxHzB49UzP7TFvtnk=\"; Path=/; HttpOnly; path=/; secure; HttpOnly; SameSite=None"
         ],
         "Content-Security-Policy": [
           "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self'; img-src 'self' *.blob.core.windows.net secure.gravatar.com extjs.com grafanarel.s3.amazonaws.com data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;"
         ],
         "Date": [
-          "Mon, 04 Aug 2025 02:10:23 GMT"
+          "Tue, 28 Oct 2025 07:47:22 GMT"
         ],
         "Content-Type": [
           "application/json"
         ],
         "Content-Length": [
-          "1586"
+          "1584"
         ]
       },
-      "ResponseBody": "{\r\n  \"status\": {\r\n    \"mapProgress\": 0.0,\r\n    \"reduceProgress\": 0.0,\r\n    \"cleanupProgress\": 0.0,\r\n    \"setupProgress\": 0.0,\r\n    \"runState\": 5,\r\n    \"startTime\": 1754273419398,\r\n    \"queue\": \"default\",\r\n    \"priority\": \"DEFAULT\",\r\n    \"schedulingInfo\": \"NA\",\r\n    \"failureInfo\": \"NA\",\r\n    \"jobACLs\": {},\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobFile\": \"/mapreducestaging/admin/.staging/job_1754041095307_0026/job.xml\",\r\n    \"finishTime\": 1754273423044,\r\n    \"historyFile\": \"\",\r\n    \"trackingUrl\": \"http://hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:8088/cluster/app/application_1754041095307_0026\",\r\n    \"numUsedSlots\": 0,\r\n    \"numReservedSlots\": 0,\r\n    \"usedMem\": 0,\r\n    \"reservedMem\": 0,\r\n    \"neededMem\": 0,\r\n    \"username\": \"admin\",\r\n    \"jobId\": \"job_1754041095307_0026\",\r\n    \"jobID\": {\r\n      \"id\": 26,\r\n      \"jtIdentifier\": \"1754041095307\"\r\n    },\r\n    \"jobPriority\": \"DEFAULT\",\r\n    \"uber\": false,\r\n    \"jobComplete\": true,\r\n    \"retired\": false,\r\n    \"state\": \"KILLED\"\r\n  },\r\n  \"profile\": {\r\n    \"user\": \"admin\",\r\n    \"jobFile\": \"/mapreducestaging/admin/.staging/job_1754041095307_0026/job.xml\",\r\n    \"url\": \"http://hn1-b38c3d.5ofbzdrbbv2uhnhmquwuhire4e.hx.internal.cloudapp.net:8088/cluster/app/application_1754041095307_0026\",\r\n    \"queueName\": \"default\",\r\n    \"jobId\": \"job_1754041095307_0026\",\r\n    \"jobID\": {\r\n      \"id\": 26,\r\n      \"jtIdentifier\": \"1754041095307\"\r\n    },\r\n    \"jobName\": \"TempletonControllerJob\"\r\n  },\r\n  \"id\": \"job_1754041095307_0026\",\r\n  \"parentId\": null,\r\n  \"percentComplete\": null,\r\n  \"exitValue\": null,\r\n  \"user\": \"admin\",\r\n  \"callback\": null,\r\n  \"completed\": null,\r\n  \"userargs\": {\r\n    \"statusdir\": \"2025-08-04T02-10-15-75cd3fa2-a38b-4902-b692-084ea11ec425\",\r\n    \"enablejobreconnect\": null,\r\n    \"arg\": [\r\n      \"10\",\r\n      \"10\"\r\n    ],\r\n    \"define\": [],\r\n    \"enablelog\": \"false\",\r\n    \"user.name\": \"admin\",\r\n    \"libjars\": null,\r\n    \"files\": null,\r\n    \"callback\": null,\r\n    \"jar\": \"/example/jars/hadoop-mapreduce-examples.jar\",\r\n    \"class\": \"pi\"\r\n  },\r\n  \"msg\": null\r\n}",
+      "ResponseBody": "{\r\n  \"status\": {\r\n    \"mapProgress\": 0.0,\r\n    \"reduceProgress\": 0.0,\r\n    \"cleanupProgress\": 0.0,\r\n    \"setupProgress\": 0.0,\r\n    \"runState\": 5,\r\n    \"startTime\": 1761637638462,\r\n    \"queue\": \"default\",\r\n    \"priority\": \"DEFAULT\",\r\n    \"schedulingInfo\": \"NA\",\r\n    \"failureInfo\": \"NA\",\r\n    \"jobACLs\": {},\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobFile\": \"/mapreducestaging/admin/.staging/job_1761634043372_0009/job.xml\",\r\n    \"finishTime\": 1761637642149,\r\n    \"historyFile\": \"\",\r\n    \"trackingUrl\": \"http://hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:8088/cluster/app/application_1761634043372_0009\",\r\n    \"numUsedSlots\": 0,\r\n    \"numReservedSlots\": 0,\r\n    \"usedMem\": 0,\r\n    \"reservedMem\": 0,\r\n    \"neededMem\": 0,\r\n    \"jobId\": \"job_1761634043372_0009\",\r\n    \"jobPriority\": \"DEFAULT\",\r\n    \"jobID\": {\r\n      \"id\": 9,\r\n      \"jtIdentifier\": \"1761634043372\"\r\n    },\r\n    \"username\": \"admin\",\r\n    \"jobComplete\": true,\r\n    \"retired\": false,\r\n    \"state\": \"KILLED\",\r\n    \"uber\": false\r\n  },\r\n  \"profile\": {\r\n    \"user\": \"admin\",\r\n    \"jobFile\": \"/mapreducestaging/admin/.staging/job_1761634043372_0009/job.xml\",\r\n    \"url\": \"http://hn1-3780cb.0zuzqecddu5uzf0avohwapagcd.hx.internal.cloudapp.net:8088/cluster/app/application_1761634043372_0009\",\r\n    \"queueName\": \"default\",\r\n    \"jobId\": \"job_1761634043372_0009\",\r\n    \"jobName\": \"TempletonControllerJob\",\r\n    \"jobID\": {\r\n      \"id\": 9,\r\n      \"jtIdentifier\": \"1761634043372\"\r\n    }\r\n  },\r\n  \"id\": \"job_1761634043372_0009\",\r\n  \"parentId\": null,\r\n  \"percentComplete\": null,\r\n  \"exitValue\": null,\r\n  \"user\": \"admin\",\r\n  \"callback\": null,\r\n  \"completed\": null,\r\n  \"userargs\": {\r\n    \"statusdir\": \"2025-10-28T07-47-12-8a63d3e6-c8e9-41ce-a197-10cb502e8d93\",\r\n    \"enablejobreconnect\": null,\r\n    \"arg\": [\r\n      \"10\",\r\n      \"10\"\r\n    ],\r\n    \"define\": [],\r\n    \"enablelog\": \"false\",\r\n    \"user.name\": \"admin\",\r\n    \"libjars\": null,\r\n    \"files\": null,\r\n    \"callback\": null,\r\n    \"jar\": \"/example/jars/hadoop-mapreduce-examples.jar\",\r\n    \"class\": \"pi\"\r\n  },\r\n  \"msg\": null\r\n}",
       "StatusCode": 200
     }
   ],
   "Names": {},
   "Variables": {
-    "SubscriptionId": "00000000-0000-0000-0000-000000000000"
+    "SubscriptionId": "964c10bb-8a6c-43bc-83d3-6b318c6c7305"
   }
 }

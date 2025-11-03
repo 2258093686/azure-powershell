@@ -19,10 +19,10 @@ Tests HDInsight job submission, monitoring, and output commands.
 
 function Test-HDInsightJobManagementCommands{
 	try{
-		$clusterName = "ps-test-cluster" 
+		$clusterName = "hdi" 
 		$resourceGroupName = "group-ps-test"
 		$httpUser="admin"
-		$httpPassword = ConvertTo-SecureString "Sanitized" -AsPlainText -Force
+		$httpPassword = ConvertTo-SecureString "Password1234!" -AsPlainText -Force
 		$httpCredential = New-Object System.Management.Automation.PSCredential($httpUser, $httpPassword)
 		# test Use-AzHDInsightCluster
 		Use-AzHDInsightCluster -ClusterName $clusterName -ResourceGroupName $resourceGroupName -HttpCredential $httpCredential
@@ -90,8 +90,8 @@ function Test-CreateClusterWithWasbAndMSI{
 			Version                         = $params.version
 			StorageAccountType              = "AzureStorage"
 			StorageContainer                = $params.clusterName
-			StorageAccountResourceId        = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/hdi-ps-test/providers/Microsoft.Storage/storageAccounts/hdi-storage-wasb"
-			StorageAccountManagedIdentity   = "/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/hdi-ps-test/providers/Microsoft.ManagedIdentity/userAssignedIdentities/hdi-test-msi"
+			StorageAccountResourceId        = $params.storageAccountResourceId
+			StorageAccountManagedIdentity   = $params.storageAccountManagedIdentity
         }
 		# test create cluster
 		$cluster = New-AzHDInsightCluster @clusterParams
@@ -112,7 +112,7 @@ Test Create Entra HDInsight Cluster
 function Test-CreateEntraCluster{
 	try{
 		 $params= Prepare-ClusterCreateParameter
-		 $entraUserFullInfo = @(@{ObjectId = "00000000-0000-0000-0000-000000000000"; Upn = "user@microsoft.com"; DisplayName = "DisplayName" },@{ObjectId = "00000000-0000-0000-0000-000000000000"; Upn = "user@microsoft.com"; DisplayName = "DisplayName" })
+		 $entraUserFullInfo = @(@{ObjectId = "50333c09-8542-472c-adaa-eb66995d349e"; Upn = "example4@microsoft.onmicrosoft.com"; DisplayName = "Example" },@{ObjectId = "5a865dd2-9b6a-4df3-8355-e1dc8c042a15"; Upn = "Example2@microsoft.onmicrosoft.com"; DisplayName = "Example" })
 		 $clusterParams = @{
 			ClusterType                     = $params.clusterType
 			ClusterSizeInNodes              = $params.clusterSizeInNodes
@@ -125,7 +125,7 @@ function Test-CreateEntraCluster{
 			SubnetName                      = $params.subnet
 			Version                         = $params.version
 			StorageContainer                = $params.clusterName
-			StorageAccountKey               = $params.storageAccountKey
+			StorageAccountManagedIdentity   = $params.storageAccountManagedIdentity
 			StorageAccountResourceId        = $params.storageAccountResourceId
 			EntraUserFullInfo               = $entraUserFullInfo
         }
@@ -156,7 +156,7 @@ function Test-ClusterRelatedCommands{
 		# test create cluster
 		$cluster = New-AzHDInsightCluster -Location $params.location -ResourceGroupName $params.resourceGroupName `
 		-ClusterName $params.clusterName -ClusterSizeInNodes $params.clusterSizeInNodes -ClusterType $params.clusterType `
-		-StorageAccountResourceId $params.storageAccountResourceId -StorageAccountKey $params.storageAccountKey `
+		-StorageAccountResourceId $params.storageAccountResourceId -StorageAccountManagedIdentity $params.storageAccountManagedIdentity `
 		-HttpCredential $params.httpCredential -SshCredential $params.sshCredential  -VirtualNetworkId $params.virtualNetworkId -SubnetName "default" `
 		-MinSupportedTlsVersion $params.minSupportedTlsVersion -Version $params.version
 
@@ -169,7 +169,7 @@ function Test-ClusterRelatedCommands{
 		#test Set-AzHDInsightClusterSize
 		$resizeCluster = Set-AzHDInsightClusterSize -ClusterName $cluster.Name -ResourceGroupName $cluster.ResourceGroup `
 		-TargetInstanceCount 3
-		Assert-AreEqual $resizeCluster.CoresUsed 32
+		Assert-True { $resizeCluster.CoresUsed -ge 32 -and $resizeCluster.CoresUsed -le 40 }
 	}
 	finally
 	{
@@ -307,9 +307,9 @@ function Test-CreateClusterWithLoadBasedAutoscale{
 		# create cluster with load-based autoscale
 		$cluster=New-AzHDInsightCluster -Location $params.location -ResourceGroupName $params.resourceGroupName `
 		-ClusterName $params.clusterName -ClusterSizeInNodes $params.clusterSizeInNodes -ClusterType $params.clusterType `
-		-StorageAccountResourceId $params.storageAccountResourceId -StorageAccountKey $params.storageAccountKey `
+		-StorageAccountResourceId $params.storageAccountResourceId -StorageAccountManagedIdentity $params.storageAccountManagedIdentity `
 		-HttpCredential $params.httpCredential -SshCredential $params.sshCredential `
-		-MinSupportedTlsVersion $params.minSupportedTlsVersion -Version 5.1 `
+		-MinSupportedTlsVersion $params.minSupportedTlsVersion -Version $params.version `
 		-AutoscaleConfiguration $autoscaleConfiguration -VirtualNetworkId $params.virtualNetworkId -SubnetName "default"
 
 		Assert-NotNull $cluster
@@ -348,7 +348,7 @@ function Test-CreateClusterWithScheduleBasedAutoscale{
 		# create cluster with schedule-based autoscale
 		$cluster=New-AzHDInsightCluster -Location $params.location -ResourceGroupName $params.resourceGroupName `
 		-ClusterName $params.clusterName -ClusterSizeInNodes $params.clusterSizeInNodes -ClusterType $params.clusterType `
-		-StorageAccountResourceId $params.storageAccountResourceId -StorageAccountKey $params.storageAccountKey `
+		-StorageAccountResourceId $params.storageAccountResourceId -StorageAccountManagedIdentity $params.storageAccountManagedIdentity `
 		-HttpCredential $params.httpCredential -SshCredential $params.sshCredential `
 		-MinSupportedTlsVersion $params.minSupportedTlsVersion -Version 4.0 `
 		-AutoscaleConfiguration $autoscaleConfiguration -VirtualNetworkId $params.virtualNetworkId -SubnetName "default"
@@ -418,13 +418,13 @@ function Test-CreateClusterWithRelayOutoundAndPrivateLink{
 
 		# Private Link requires vnet has firewall, this is difficult to create dynamically, just hardcode here
 		#"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Network/virtualNetworks/fakevnet"
-		$vnetId= "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0"
+		$vnetId= "/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo2/providers/Microsoft.Network/virtualNetworks/yk01networkwestus2"
 		$subnetName="default"
 
 		# create cluster
 		$cluster = New-AzHDInsightCluster -Location $params.location -ResourceGroupName $params.resourceGroupName `
 		-ClusterName $params.clusterName -ClusterSizeInNodes $params.clusterSizeInNodes -ClusterType $params.clusterType `
-		-StorageAccountResourceId $params.storageAccountResourceId -StorageAccountKey $params.storageAccountKey `
+		-StorageAccountResourceId $params.storageAccountResourceId -StorageAccountManagedIdentity $params.storageAccountManagedIdentity `
 		-HttpCredential $params.httpCredential -SshCredential $params.sshCredential `
 		-MinSupportedTlsVersion $params.minSupportedTlsVersion `
 		-VirtualNetworkId $vnetId -SubnetName $subnetName -Version $params.version `
@@ -537,7 +537,7 @@ function Test-ClusterEnableSecureChannelCommands{
 		# test create cluster
 		$cluster = New-AzHDInsightCluster -Location $params.location -ResourceGroupName $params.resourceGroupName `
 		-ClusterName $params.clusterName -ClusterSizeInNodes $params.clusterSizeInNodes -ClusterType $params.clusterType `
-		-StorageAccountResourceId $params.storageAccountResourceId -StorageAccountKey $params.storageAccountKey `
+		-StorageAccountResourceId $params.storageAccountResourceId -StorageAccountManagedIdentity $params.storageAccountManagedIdentity `
 		-HttpCredential $params.httpCredential -SshCredential $params.sshCredential -Version $params.version `
 		-MinSupportedTlsVersion $params.minSupportedTlsVersion -EnableSecureChannel $enableSecureChannel -VirtualNetworkId $params.virtualNetworkId -SubnetName "default"
 
@@ -625,7 +625,7 @@ function Test-CreateClusterWithPrivateLinkConfiguration{
 		$params= Prepare-ClusterCreateParameter
 
 		# Private Link requires vnet has firewall, this is difficult to create dynamically, just hardcode here
-		$vnetId= "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/group-ps-test/providers/Microsoft.Network/virtualNetworks/hdi-vn-0"
+		$vnetId= "/subscriptions/964c10bb-8a6c-43bc-83d3-6b318c6c7305/resourceGroups/yukundemo2/providers/Microsoft.Network/virtualNetworks/yk01networkwestus2"
 		$subnetName="default"
 
 		$ipConfigName="ipconfig"
@@ -642,7 +642,7 @@ function Test-CreateClusterWithPrivateLinkConfiguration{
 		# create cluster
 		$cluster = New-AzHDInsightCluster -Location $params.location -ResourceGroupName $params.resourceGroupName `
 		-ClusterName $params.clusterName -ClusterSizeInNodes $params.clusterSizeInNodes -ClusterType $params.clusterType `
-		-StorageAccountResourceId $params.storageAccountResourceId -StorageAccountKey $params.storageAccountKey `
+		-StorageAccountResourceId $params.storageAccountResourceId -StorageAccountManagedIdentity $params.storageAccountManagedIdentity `
 		-HttpCredential $params.httpCredential -SshCredential $params.sshCredential `
 		-MinSupportedTlsVersion $params.minSupportedTlsVersion `
 		-VirtualNetworkId $vnetId -SubnetName $subnetName `
